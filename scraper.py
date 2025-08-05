@@ -86,10 +86,53 @@ def extraer_enlaces_imdb(html_path, output_csv_path='data/enlaces_peliculas.csv'
     return len(urls)
 
 
-html = get_page(TOP_URL)
-debug_path = os.path.join('data', 'imdb_debug.html')
-with open(debug_path, 'w', encoding='utf-8') as f:
-    f.write(html)
-extraer_enlaces_imdb(debug_path)
+def extraer_info_pelicula(url):
+    """
+    Extrae información detallada de una película desde IMDb.
 
+    """
+    headers = get_headers()
+    response = requests.get(url, headers=headers)
+    soup = BeautifulSoup(response.text, 'html.parser')
+
+    data = {}
+
+    # Título y año
+    title_tag = soup.find('h1')
+    if title_tag:
+        data['titulo'] = title_tag.get_text(strip=True).split('(')[0]
+        año_tag = title_tag.find_next('span')
+        if año_tag and año_tag.text.isdigit():
+            data['año'] = int(año_tag.text)
+
+    # Calificación IMDb
+    rating_tag = soup.find('span', {'class': 'sc-bde20123-1 cMEQkK'})
+    if rating_tag:
+        data['calificacion'] = float(rating_tag.text)
+
+    # Duración
+    duracion_tag = soup.find('li', {'data-testid': 'title-techspec_runtime'})
+    if duracion_tag:
+        minutos = duracion_tag.find('div')
+        if minutos:
+            match = re.search(r'(\d+)', minutos.text)
+            if match:
+                data['duracion_min'] = int(match.group(1))
+
+    # Metascore (opcional)
+    metascore_tag = soup.find('span', class_='score-meta')
+    if metascore_tag:
+        try:
+            data['metascore'] = int(metascore_tag.text.strip())
+        except ValueError:
+            pass
+
+    # Actores principales
+    actores = []
+    cast_section = soup.select('a.sc-bfec09a1-1.fUguci')
+    for actor_tag in cast_section[:3]:  # Solo los primeros 3
+        actores.append(actor_tag.text.strip())
+    data['actores'] = actores
+
+    return data
 

@@ -249,3 +249,30 @@ def test_extraer_enlaces_imdb_crea_csv_correctamente():
         assert reader[0] == ['Posición', 'Enlace']
         assert reader[1][1] == 'https://www.imdb.com/title/tt0111161/'
         assert reader[3][0] == '3'
+
+
+def test_extraer_enlaces_imdb_sin_resultados():
+    html_fake = '''
+    <html>
+        <head><title>Sin películas</title></head>
+        <body><p>No hay nada acá.</p></body>
+    </html>
+    '''
+
+    with tempfile.TemporaryDirectory() as tmpdir:
+        html_path = os.path.join(tmpdir, 'sin_peliculas.html')
+        csv_path = os.path.join(tmpdir, 'enlaces_peliculas.csv')
+
+        with open(html_path, 'w', encoding='utf-8') as f:
+            f.write(html_fake)
+
+        total = extraer_enlaces_imdb(html_path, csv_path)
+
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = list(csv.reader(f))
+
+        assert total == 0
+        assert len(reader) == 1
+        assert reader[0] == ['Posición', 'Enlace']
+
+
