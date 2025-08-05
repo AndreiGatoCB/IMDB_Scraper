@@ -1,10 +1,13 @@
+import csv
 import sys
 import os
+import tempfile
+
 import pytest
 import requests
 import logging
 from unittest.mock import patch
-from scraper import get_headers, get_page, USER_AGENTS
+from scraper import get_headers, get_page, USER_AGENTS, extraer_enlaces_imdb
 import responses
 
 # Configurar path
@@ -82,7 +85,7 @@ def test_get_page_client_errors(status_code):
 
     with responses.RequestsMock() as rsps:
         rsps.add(responses.GET, test_url, status=status_code)
-        result = get_page(test_url)
+        result = get_page(test_url, max_retries=1)
 
         assert result is None
         assert len(rsps.calls) == 1
@@ -202,3 +205,47 @@ def test_get_page_logging(caplog):
             # Verificar error final
             assert any("Error final al obtener" in record.message for record in caplog.records)
             assert test_url in caplog.text
+
+
+def test_extraer_enlaces_imdb_crea_csv_correctamente():
+    # Crear HTML simulado con 3 enlaces
+    html_fake = '''
+    {
+      "@type":"ListItem",
+      "position":1,
+      "url":"https://www.imdb.com/title/tt0111161/"
+    },
+    {
+      "@type":"ListItem",
+      "position":2,
+      "url":"https://www.imdb.com/title/tt0068646/"
+    },
+    {
+      "@type":"ListItem",
+      "position":3,
+      "url":"https://www.imdb.com/title/tt0468569/"
+    }
+    '''
+
+    # Crear archivos temporales
+    with tempfile.TemporaryDirectory() as tmpdir:
+        html_path = os.path.join(tmpdir, 'fake_imdb.html')
+        csv_path = os.path.join(tmpdir, 'enlaces_peliculas.csv')
+
+        # Guardar el HTML falso
+        with open(html_path, 'w', encoding='utf-8') as f:
+            f.write(html_fake)
+
+        # Ejecutar la función
+        total = extraer_enlaces_imdb(html_path, csv_path)
+
+        # Leer el CSV y validar contenido
+        with open(csv_path, 'r', encoding='utf-8') as f:
+            reader = list(csv.reader(f))
+
+        # Encabezado + 3 filas
+        assert total == 3
+        assert len(reader) == 4  # 1 header + 3 líneas
+        assert reader[0] == ['Posición', 'Enlace']
+        assert reader[1][1] == 'https://www.imdb.com/title/tt0111161/'
+        assert reader[3][0] == '3'

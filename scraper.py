@@ -1,8 +1,13 @@
+import csv
+import logging
+import os
+import time
+
 import requests
 from bs4 import BeautifulSoup
-import logging
-import time
+from datetime import datetime
 import random
+import re
 
 USER_AGENTS = [
     # Chrome en Windows
@@ -12,9 +17,12 @@ USER_AGENTS = [
     "Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:126.0) Gecko/20100101 Firefox/126.0",
 
     # Safari en iOS
-    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 Mobile/15E148 Safari/604.1"
+    "Mozilla/5.0 (iPhone; CPU iPhone OS 17_5 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/17.0 "
+    "Mobile/15E148 Safari/604.1"
 
 ]
+TOP_URL = "https://www.imdb.com/chart/top/"
+os.makedirs('data', exist_ok=True)
 
 
 def get_headers():
@@ -27,40 +35,61 @@ def get_headers():
     }
 
 
-def get_page(url, max_retries=3):
-    """Obtiene el contenido HTML de una URL con manejo de errores avanzado"""
-    for attempt in range(max_retries):
+def get_page(url, max_retries=3, delay=1):
+    for attempt in range(1, max_retries + 1):
         try:
-            response = requests.get(
-                url,
-                headers=get_headers(),
-                timeout=15
-            )
+            response = requests.get(url, headers=get_headers(), timeout=10)
+            if response.status_code in {200, 201, 202}:
+                content = response.text
 
-            # Detectar bloqueos basados en contenido
-            if "unusual traffic" in response.text or "captcha" in response.text:
-                logging.warning(f"Detectado posible bloqueo en {url}")
-                raise RuntimeError("Blocked by CAPTCHA")
+                # Detección de bloqueo tipo CAPTCHA o tráfico inusual
+                if "unusual traffic" in content or "captcha" in content.lower():
+                    logging.warning(f"[{attempt}] Posible bloqueo por tráfico inusual en {url}")
+                    time.sleep(delay)
+                    continue
 
-            # Verificar estado HTTP
-            response.raise_for_status()
-            return response.text
+                return content
+            else:
+                logging.warning(f"[{attempt}] Error HTTP {response.status_code} al acceder a {url}")
+        except (requests.exceptions.RequestException, requests.exceptions.Timeout) as e:
+            logging.warning(f"[{attempt}] Excepción al acceder a {url}: {e}")
 
-        except requests.exceptions.HTTPError as e:
-            # No reintentar para errores 4xx (excepto 429)
-            if 400 <= e.response.status_code < 500 and e.response.status_code != 429:
-                logging.error(f"Error HTTP {e.response.status_code} no reintentable: {url}")
-                return None
-            logging.warning(f"Error HTTP {e.response.status_code} en intento {attempt + 1}/{max_retries}")
+        time.sleep(delay)
 
-        except (requests.exceptions.RequestException, RuntimeError) as e:
-            logging.warning(f"Error en intento {attempt + 1}/{max_retries}: {str(e)}")
-
-        # Espera exponencial antes del reintento
-        wait_time = 2 ** attempt + random.random()
-        logging.info(f"Esperando {wait_time:.1f}s antes de reintentar")
-        time.sleep(wait_time)
-
-    logging.error(f"Error final al obtener {url} después de {max_retries} intentos")
+    logging.error(f"Error final al obtener {url} tras {max_retries} intentos")
     return None
+
+
+def extraer_enlaces_imdb(html_path, output_csv_path='data/enlaces_peliculas.csv'):
+    """
+    Extrae enlaces de películas desde un archivo HTML de IMDb y los guarda con su posición en un CSV.
+    """
+    # Cargar el archivo HTML
+    with open(html_path, 'r', encoding='utf-8') as f:
+        content = f.read()
+
+    # Buscar todos los enlaces de películas
+    urls = re.findall(r'"url":"(https://www\.imdb\.com/title/tt\d+/)"', content)
+
+    # Eliminar duplicados manteniendo el orden
+    urls = list(dict.fromkeys(urls))
+
+    # Guardar en CSV
+    os.makedirs(os.path.dirname(output_csv_path), exist_ok=True)
+    with open(output_csv_path, 'w', newline='', encoding='utf-8') as csvfile:
+        writer = csv.writer(csvfile)
+        writer.writerow(['Posición', 'Enlace'])
+        for i, url in enumerate(urls, start=1):
+            writer.writerow([i, url])
+
+    print(f"Se guardaron {len(urls)} enlaces en '{output_csv_path}'")
+    return len(urls)
+
+
+html = get_page(TOP_URL)
+debug_path = os.path.join('data', 'imdb_debug.html')
+with open(debug_path, 'w', encoding='utf-8') as f:
+    f.write(html)
+extraer_enlaces_imdb(debug_path)
+
 
