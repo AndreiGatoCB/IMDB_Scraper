@@ -1,12 +1,16 @@
 import csv
 import os
-import time
-
+from functools import wraps
+from lxml import html
 import requests
 from bs4 import BeautifulSoup
 import re
 from scraper import get_headers
+import psycopg2
+from psycopg2 import sql
+from dotenv import load_dotenv
 
+load_dotenv()
 
 def extraer_metascore_flexible(soup):
     """
@@ -25,11 +29,132 @@ def extraer_metascore_flexible(soup):
     return None
 
 
+def probar_conexion():
+    try:
+        conn = psycopg2.connect(
+            host=os.environ.get("DB_HOST"),
+            port=os.environ.get("DB_PORT"),
+            dbname=os.environ.get("POSTGRES_DB"),
+            user=os.environ.get("POSTGRES_USER"),
+            password=os.environ.get("POSTGRES_PASSWORD")
+        )
+        print("✅ Conexión exitosa a PostgreSQL")
+        conn.close()
+        return True
+    except Exception as e:
+        print(f"❌ Error al conectar: {e}")
+        return False
+
+
+def insertar_en_bd(func):
+    @wraps(func)
+    def wrapper(url, *args, **kwargs):
+        # Ejecutar la función original
+        data = func(url, *args, **kwargs)
+
+        # Añadir URL a los datos para la inserción
+        data['url'] = url
+
+        try:
+            print(
+                f'{os.environ.get("DB_HOST")}, {os.environ.get("DB_PORT")}, {os.environ.get("POSTGRES_DB")}, {os.environ.get("POSTGRES_USER")}, {os.environ.get("POSTGRES_PASSWORD")}')
+
+            conn = psycopg2.connect(
+                host=os.environ.get("DB_HOST"),
+                port=os.environ.get("DB_PORT"),
+                dbname=os.environ.get("POSTGRES_DB"),
+                user=os.environ.get("POSTGRES_USER"),
+                password=os.environ.get("POSTGRES_PASSWORD")
+            )
+            cur = conn.cursor()
+
+            cur.execute(
+                sql.SQL("""INSERT INTO peliculas (titulo, anio, calificacion, duracion_min, metascore, url)
+                    VALUES (%s, %s, %s, %s, %s, %s)
+                    ON CONFLICT (url) DO NOTHING
+                    RETURNING id;
+                    """),
+                (
+                    data.get('titulo'),
+                    data.get('año'),
+                    data.get('calificacion'),
+                    data.get('duracion_min'),
+                    data.get('metascore'),
+                    url
+                )
+            )
+
+            # Obtener ID de la película insertada
+            result = cur.fetchone()
+            if result:
+                pelicula_id = result[0]
+                print(f"↑ PostgreSQL: Película insertada ID {pelicula_id}")
+
+                # 2. Insertar actores relacionados
+                actores = data.get('actores', [])
+                for actor in actores:
+                    cur.execute(
+                        sql.SQL("""
+                                        INSERT INTO actores (pelicula_id, nombre)
+                                        VALUES (%s, %s)
+                                    """),
+                        (pelicula_id, actor)
+                    )
+                print(f"↑ Insertados {len(actores)} actores para película ID {pelicula_id}")
+
+            conn.commit()
+            print(f"↑ PostgreSQL: {data.get('titulo', 'N/A')}")
+            conn.close()
+        except psycopg2.Error as e:
+            print(f"❌ Error PostgreSQL: {e}")
+
+        return data
+
+    return wrapper
+
+
+def crear_tabla_si_no_existe():
+    """Crea la tabla si no existe"""
+    conn = psycopg2.connect(
+        host=os.environ.get("DB_HOST"),
+        port=os.environ.get("DB_PORT"),
+        dbname=os.environ.get("POSTGRES_DB"),
+        user=os.environ.get("POSTGRES_USER"),
+        password=os.environ.get("POSTGRES_PASSWORD")
+    )
+    cur = conn.cursor()
+    cur.execute("""
+                CREATE TABLE IF NOT EXISTS peliculas (
+                    id SERIAL PRIMARY KEY,
+                    titulo TEXT NOT NULL,
+                    anio INTEGER,
+                    calificacion FLOAT,
+                    duracion_min INTEGER,
+                    metascore INTEGER,
+                    url TEXT UNIQUE NOT NULL,
+                    fecha_creacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                );
+            """)
+
+    # Crear tabla actores con relación a películas
+    cur.execute("""
+                CREATE TABLE IF NOT EXISTS actores (
+                    id SERIAL PRIMARY KEY,
+                    pelicula_id INTEGER NOT NULL REFERENCES peliculas(id) ON DELETE CASCADE,
+                    nombre TEXT NOT NULL
+                );
+            """)
+    conn.commit()
+    cur.close()
+    conn.close()
+
+
+@insertar_en_bd
 def extraer_info_pelicula(url):
     headers = get_headers()
     response = requests.get(url, headers=headers)
     soup = BeautifulSoup(response.text, 'html.parser')
-
+    tree = html.fromstring(str(soup))
     data = {}
 
     # Título
@@ -37,13 +162,19 @@ def extraer_info_pelicula(url):
     if title_tag:
         data['titulo'] = title_tag.get_text(strip=True)
 
-    # Año
-    año_tag = soup.select_one('ul li span.ipc-inline-list__item')
-    if año_tag:
-        año = re.search(r'\d{4}', año_tag.text)
-        if año:
-            data['año'] = int(año.group())
+    # año
+    try:
+        # El XPath que proporcionaste
+        año_element = tree.xpath(
+            '//*[@id="__next"]/main/div/section[1]/section/div[3]/section/section/div[2]/div[1]/ul/li[1]/a')
 
+        if año_element:
+            año_text = año_element[0].text.strip()
+            año_match = re.search(r'\d{4}', año_text)
+            if año_match:
+                data['año'] = int(año_match.group())
+    except Exception as e:
+        print(f"Error extrayendo año con XPath: {e}")
     # Calificación IMDb
     rating_tag = soup.select_one('[data-testid="hero-rating-bar__aggregate-rating__score"] span')
     if rating_tag:
@@ -90,8 +221,7 @@ def extraer_info_pelicula(url):
             break
 
     data['actores'] = actores
-    # print(f'{title_tag.get_text(strip=True)}, {actores}'
-    #       f'{float(rating_tag.text.strip())}, {total_min}, {metascore}')
+    print(data)
     return data
 
 def procesar_peliculas_csv(input_csv='data/enlaces_peliculas.csv',
@@ -100,22 +230,28 @@ def procesar_peliculas_csv(input_csv='data/enlaces_peliculas.csv',
     """
     Lee un CSV de enlaces IMDb, extrae datos por película y guarda los resultados en un nuevo CSV.
     """
+    if not probar_conexion():
+        return
+    crear_tabla_si_no_existe()
+
     resultados = []
 
     with open(input_csv, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
         n = 0
+
         for fila in reader:
-            url = fila['Enlace']
-            try:
-                info = extraer_info_pelicula(url)
-                info['url'] = url
-                resultados.append(info)
-                n += 1
-                print(f"✅ {n} Procesado: {info.get('titulo', 'N/A')}")
-            except Exception as e:
-                print(f"❌ Error al procesar {url}: {e}")
-            time.sleep(delay)
+            while n < 250:
+                url = fila['Enlace']
+                try:
+                    info = extraer_info_pelicula(url)
+                    info['url'] = url
+                    resultados.append(info)
+                    n += 1
+                    print(f"✅ {n} Procesado: {info.get('titulo', 'N/A')}")
+                except Exception as e:
+                    print(f"❌ Error al procesar {url}: {e}")
+                # time.sleep(delay)
 
     # Guardar resultados
     os.makedirs(os.path.dirname(output_csv), exist_ok=True)

@@ -5,7 +5,6 @@ import time
 
 import requests
 from bs4 import BeautifulSoup
-from datetime import datetime
 import random
 import re
 
@@ -135,4 +134,3 @@ def extraer_info_pelicula(url):
     data['actores'] = actores
 
     return data
-
