@@ -1,0 +1,1003 @@
+2025-08-06 19:29:27,387 [INFO] Great Conexión exitosa a PostgreSQL
+2025-08-06 19:29:30,504 [INFO] Up PostgreSQL: Película insertada ID 1
+2025-08-06 19:29:30,510 [INFO] Up Insertados 3 actores para película ID 1
+2025-08-06 19:29:30,518 [INFO] Up PostgreSQL: The Shawshank Redemption
+2025-08-06 19:29:30,518 [INFO] Great Procesado: The Shawshank Redemption
+2025-08-06 19:29:30,688 [INFO] Up PostgreSQL: Película insertada ID 2
+2025-08-06 19:29:30,798 [INFO] Up PostgreSQL: Película insertada ID 3
+2025-08-06 19:29:30,798 [INFO] Up Insertados 3 actores para película ID 2
+2025-08-06 19:29:30,806 [INFO] Up Insertados 3 actores para película ID 3
+2025-08-06 19:29:30,829 [INFO] Up PostgreSQL: The Godfather Part II
+2025-08-06 19:29:30,829 [INFO] Up PostgreSQL: 12 Angry Men
+2025-08-06 19:29:30,876 [INFO] Great Procesado: The Godfather Part II
+2025-08-06 19:29:30,902 [INFO] Great Procesado: 12 Angry Men
+2025-08-06 19:29:31,093 [INFO] Up PostgreSQL: Película insertada ID 4
+2025-08-06 19:29:31,097 [INFO] Up Insertados 3 actores para película ID 4
+2025-08-06 19:29:31,103 [INFO] Up PostgreSQL: The Lord of the Rings: The Fellowship of the Ring
+2025-08-06 19:29:31,103 [INFO] Great Procesado: The Lord of the Rings: The Fellowship of the Ring
+2025-08-06 19:29:31,535 [INFO] Up PostgreSQL: Película insertada ID 5
+2025-08-06 19:29:31,538 [INFO] Up Insertados 3 actores para película ID 5
+2025-08-06 19:29:31,545 [INFO] Up PostgreSQL: The Dark Knight
+2025-08-06 19:29:31,546 [INFO] Great Procesado: The Dark Knight
+2025-08-06 19:29:31,891 [INFO] Up PostgreSQL: Película insertada ID 6
+2025-08-06 19:29:31,894 [INFO] Up Insertados 3 actores para película ID 6
+2025-08-06 19:29:31,900 [INFO] Up PostgreSQL: The Good, the Bad and the Ugly
+2025-08-06 19:29:31,901 [INFO] Great Procesado: The Good, the Bad and the Ugly
+2025-08-06 19:29:31,980 [INFO] Up PostgreSQL: Película insertada ID 7
+2025-08-06 19:29:31,983 [INFO] Up Insertados 3 actores para película ID 7
+2025-08-06 19:29:31,984 [INFO] Up PostgreSQL: Película insertada ID 8
+2025-08-06 19:29:31,985 [INFO] Up PostgreSQL: The Godfather
+2025-08-06 19:29:31,985 [INFO] Great Procesado: The Godfather
+2025-08-06 19:29:31,987 [INFO] Up Insertados 3 actores para película ID 8
+2025-08-06 19:29:31,989 [INFO] Up PostgreSQL: Pulp Fiction
+2025-08-06 19:29:31,990 [INFO] Great Procesado: Pulp Fiction
+2025-08-06 19:29:32,298 [INFO] Up PostgreSQL: Película insertada ID 9
+2025-08-06 19:29:32,301 [INFO] Up Insertados 3 actores para película ID 9
+2025-08-06 19:29:32,305 [INFO] Up PostgreSQL: Película insertada ID 10
+2025-08-06 19:29:32,307 [INFO] Up PostgreSQL: Schindler's List
+2025-08-06 19:29:32,308 [INFO] Great Procesado: Schindler's List
+2025-08-06 19:29:32,310 [INFO] Up Insertados 3 actores para película ID 10
+2025-08-06 19:29:32,312 [INFO] Up PostgreSQL: The Lord of the Rings: The Return of the King
+2025-08-06 19:29:32,312 [INFO] Great Procesado: The Lord of the Rings: The Return of the King
+2025-08-06 19:29:33,601 [INFO] Up PostgreSQL: Película insertada ID 11
+2025-08-06 19:29:33,606 [INFO] Up Insertados 3 actores para película ID 11
+2025-08-06 19:29:33,609 [INFO] Up PostgreSQL: Forrest Gump
+2025-08-06 19:29:33,610 [INFO] Great Procesado: Forrest Gump
+2025-08-06 19:29:34,082 [INFO] Up PostgreSQL: Película insertada ID 12
+2025-08-06 19:29:34,084 [INFO] Up Insertados 3 actores para película ID 12
+2025-08-06 19:29:34,091 [INFO] Up PostgreSQL: The Lord of the Rings: The Two Towers
+2025-08-06 19:29:34,092 [INFO] Great Procesado: The Lord of the Rings: The Two Towers
+2025-08-06 19:29:34,258 [INFO] Up PostgreSQL: Película insertada ID 13
+2025-08-06 19:29:34,274 [INFO] Up PostgreSQL: Película insertada ID 14
+2025-08-06 19:29:34,276 [INFO] Up Insertados 3 actores para película ID 13
+2025-08-06 19:29:34,278 [INFO] Up Insertados 3 actores para película ID 14
+2025-08-06 19:29:34,285 [INFO] Up PostgreSQL: Fight Club
+2025-08-06 19:29:34,288 [INFO] Great Procesado: Fight Club
+2025-08-06 19:29:34,289 [INFO] Up PostgreSQL: Inception
+2025-08-06 19:29:34,291 [INFO] Great Procesado: Inception
+2025-08-06 19:29:35,058 [INFO] Up PostgreSQL: Película insertada ID 15
+2025-08-06 19:29:35,061 [INFO] Up Insertados 3 actores para película ID 15
+2025-08-06 19:29:35,069 [INFO] Up PostgreSQL: Star Wars: Episode V - The Empire Strikes Back
+2025-08-06 19:29:35,069 [INFO] Great Procesado: Star Wars: Episode V - The Empire Strikes Back
+2025-08-06 19:29:35,259 [INFO] Up PostgreSQL: Película insertada ID 16
+2025-08-06 19:29:35,336 [INFO] Up Insertados 3 actores para película ID 16
+2025-08-06 19:29:35,458 [INFO] Up PostgreSQL: One Flew Over the Cuckoo's Nest
+2025-08-06 19:29:35,460 [INFO] Great Procesado: One Flew Over the Cuckoo's Nest
+2025-08-06 19:29:35,695 [INFO] Up PostgreSQL: Película insertada ID 17
+2025-08-06 19:29:35,741 [INFO] Up Insertados 3 actores para película ID 17
+2025-08-06 19:29:35,747 [INFO] Up PostgreSQL: Se7en
+2025-08-06 19:29:35,747 [INFO] Great Procesado: Se7en
+2025-08-06 19:29:35,809 [INFO] Up PostgreSQL: Película insertada ID 18
+2025-08-06 19:29:35,812 [INFO] Up Insertados 3 actores para película ID 18
+2025-08-06 19:29:35,814 [INFO] Up PostgreSQL: Interstellar
+2025-08-06 19:29:35,814 [INFO] Great Procesado: Interstellar
+2025-08-06 19:29:36,641 [INFO] Up PostgreSQL: Película insertada ID 19
+2025-08-06 19:29:36,645 [INFO] Up Insertados 3 actores para película ID 19
+2025-08-06 19:29:36,652 [INFO] Up PostgreSQL: Goodfellas
+2025-08-06 19:29:36,653 [INFO] Great Procesado: Goodfellas
+2025-08-06 19:29:36,671 [INFO] Up PostgreSQL: Película insertada ID 20
+2025-08-06 19:29:36,675 [INFO] Up Insertados 3 actores para película ID 20
+2025-08-06 19:29:36,677 [INFO] Up PostgreSQL: The Matrix
+2025-08-06 19:29:36,677 [INFO] Great Procesado: The Matrix
+2025-08-06 19:29:37,234 [INFO] Up PostgreSQL: Película insertada ID 21
+2025-08-06 19:29:37,438 [INFO] Up Insertados 3 actores para película ID 21
+2025-08-06 19:29:37,448 [INFO] Up PostgreSQL: The Silence of the Lambs
+2025-08-06 19:29:37,450 [INFO] Great Procesado: The Silence of the Lambs
+2025-08-06 19:29:38,006 [INFO] Up PostgreSQL: Película insertada ID 22
+2025-08-06 19:29:38,030 [INFO] Up Insertados 3 actores para película ID 22
+2025-08-06 19:29:38,048 [INFO] Up PostgreSQL: The Green Mile
+2025-08-06 19:29:38,056 [INFO] Great Procesado: The Green Mile
+2025-08-06 19:29:38,754 [INFO] Up PostgreSQL: Película insertada ID 23
+2025-08-06 19:29:38,770 [INFO] Up Insertados 3 actores para película ID 23
+2025-08-06 19:29:38,774 [INFO] Up PostgreSQL: Saving Private Ryan
+2025-08-06 19:29:38,774 [INFO] Great Procesado: Saving Private Ryan
+2025-08-06 19:29:38,973 [INFO] Up PostgreSQL: Película insertada ID 24
+2025-08-06 19:29:38,976 [INFO] Up Insertados 3 actores para película ID 24
+2025-08-06 19:29:38,978 [INFO] Up PostgreSQL: City of God
+2025-08-06 19:29:38,979 [INFO] Great Procesado: City of God
+2025-08-06 19:29:39,467 [INFO] Up PostgreSQL: Película insertada ID 25
+2025-08-06 19:29:39,470 [INFO] Up Insertados 3 actores para película ID 25
+2025-08-06 19:29:39,474 [INFO] Up PostgreSQL: Película insertada ID 26
+2025-08-06 19:29:39,476 [INFO] Up PostgreSQL: It's a Wonderful Life
+2025-08-06 19:29:39,476 [INFO] Great Procesado: It's a Wonderful Life
+2025-08-06 19:29:39,477 [INFO] Up Insertados 3 actores para película ID 26
+2025-08-06 19:29:39,478 [INFO] Up PostgreSQL: Película insertada ID 27
+2025-08-06 19:29:39,479 [INFO] Up PostgreSQL: Película insertada ID 28
+2025-08-06 19:29:39,480 [INFO] Up PostgreSQL: Seven Samurai
+2025-08-06 19:29:39,481 [INFO] Great Procesado: Seven Samurai
+2025-08-06 19:29:39,483 [INFO] Up Insertados 3 actores para película ID 28
+2025-08-06 19:29:39,483 [INFO] Up Insertados 3 actores para película ID 27
+2025-08-06 19:29:39,485 [INFO] Up PostgreSQL: Terminator 2: Judgment Day
+2025-08-06 19:29:39,486 [INFO] Great Procesado: Terminator 2: Judgment Day
+2025-08-06 19:29:39,486 [INFO] Up PostgreSQL: Life Is Beautiful
+2025-08-06 19:29:39,487 [INFO] Great Procesado: Life Is Beautiful
+2025-08-06 19:29:40,470 [INFO] Up PostgreSQL: Película insertada ID 29
+2025-08-06 19:29:40,473 [INFO] Up Insertados 3 actores para película ID 29
+2025-08-06 19:29:40,479 [INFO] Up PostgreSQL: Back to the Future
+2025-08-06 19:29:40,480 [INFO] Great Procesado: Back to the Future
+2025-08-06 19:29:40,626 [INFO] Up PostgreSQL: Película insertada ID 30
+2025-08-06 19:29:40,630 [INFO] Up Insertados 3 actores para película ID 30
+2025-08-06 19:29:40,636 [INFO] Up PostgreSQL: Star Wars: Episode IV - A New Hope
+2025-08-06 19:29:40,636 [INFO] Great Procesado: Star Wars: Episode IV - A New Hope
+2025-08-06 19:29:40,863 [INFO] Up PostgreSQL: Película insertada ID 31
+2025-08-06 19:29:40,866 [INFO] Up Insertados 3 actores para película ID 31
+2025-08-06 19:29:40,871 [INFO] Up PostgreSQL: Spirited Away
+2025-08-06 19:29:40,873 [INFO] Great Procesado: Spirited Away
+2025-08-06 19:29:42,513 [INFO] Up PostgreSQL: Película insertada ID 32
+2025-08-06 19:29:42,521 [INFO] Up Insertados 3 actores para película ID 32
+2025-08-06 19:29:42,526 [INFO] Up PostgreSQL: The Lion King
+2025-08-06 19:29:42,528 [INFO] Great Procesado: The Lion King
+2025-08-06 19:29:42,534 [INFO] Up PostgreSQL: Película insertada ID 33
+2025-08-06 19:29:42,537 [INFO] Up Insertados 3 actores para película ID 33
+2025-08-06 19:29:42,538 [INFO] Up PostgreSQL: The Pianist
+2025-08-06 19:29:42,539 [INFO] Great Procesado: The Pianist
+2025-08-06 19:29:42,949 [INFO] Up PostgreSQL: Película insertada ID 34
+2025-08-06 19:29:42,952 [INFO] Up Insertados 3 actores para película ID 34
+2025-08-06 19:29:42,958 [INFO] Up PostgreSQL: Psycho
+2025-08-06 19:29:42,959 [INFO] Great Procesado: Psycho
+2025-08-06 19:29:42,963 [INFO] Up PostgreSQL: Película insertada ID 35
+2025-08-06 19:29:42,965 [INFO] Up Insertados 3 actores para película ID 35
+2025-08-06 19:29:42,967 [INFO] Up PostgreSQL: Grave of the Fireflies
+2025-08-06 19:29:42,967 [INFO] Great Procesado: Grave of the Fireflies
+2025-08-06 19:29:43,286 [INFO] Up PostgreSQL: Película insertada ID 36
+2025-08-06 19:29:43,289 [INFO] Up Insertados 3 actores para película ID 36
+2025-08-06 19:29:43,298 [INFO] Up PostgreSQL: The Departed
+2025-08-06 19:29:43,298 [INFO] Great Procesado: The Departed
+2025-08-06 19:29:43,736 [INFO] Up PostgreSQL: Película insertada ID 37
+2025-08-06 19:29:43,739 [INFO] Up Insertados 3 actores para película ID 37
+2025-08-06 19:29:43,745 [INFO] Up PostgreSQL: Parasite
+2025-08-06 19:29:43,745 [INFO] Great Procesado: Parasite
+2025-08-06 19:29:43,817 [INFO] Up PostgreSQL: Película insertada ID 38
+2025-08-06 19:29:43,821 [INFO] Up Insertados 3 actores para película ID 38
+2025-08-06 19:29:43,828 [INFO] Up PostgreSQL: Harakiri
+2025-08-06 19:29:43,829 [INFO] Great Procesado: Harakiri
+2025-08-06 19:29:43,837 [INFO] Up PostgreSQL: Película insertada ID 39
+2025-08-06 19:29:43,841 [INFO] Up Insertados 3 actores para película ID 39
+2025-08-06 19:29:43,842 [INFO] Up PostgreSQL: Gladiator
+2025-08-06 19:29:43,842 [INFO] Great Procesado: Gladiator
+2025-08-06 19:29:44,704 [INFO] Up PostgreSQL: Película insertada ID 40
+2025-08-06 19:29:44,708 [INFO] Up Insertados 3 actores para película ID 40
+2025-08-06 19:29:44,715 [INFO] Up PostgreSQL: Whiplash
+2025-08-06 19:29:44,716 [INFO] Great Procesado: Whiplash
+2025-08-06 19:29:45,380 [INFO] Up PostgreSQL: Película insertada ID 41
+2025-08-06 19:29:45,384 [INFO] Up Insertados 3 actores para película ID 41
+2025-08-06 19:29:45,390 [INFO] Up PostgreSQL: The Prestige
+2025-08-06 19:29:45,390 [INFO] Great Procesado: The Prestige
+2025-08-06 19:29:46,118 [INFO] Up PostgreSQL: Película insertada ID 42
+2025-08-06 19:29:46,122 [INFO] Up Insertados 3 actores para película ID 42
+2025-08-06 19:29:46,129 [INFO] Up PostgreSQL: Spider-Man: Across the Spider-Verse
+2025-08-06 19:29:46,130 [INFO] Great Procesado: Spider-Man: Across the Spider-Verse
+2025-08-06 19:29:46,159 [INFO] Up PostgreSQL: Película insertada ID 43
+2025-08-06 19:29:46,165 [INFO] Up Insertados 3 actores para película ID 43
+2025-08-06 19:29:46,166 [INFO] Up PostgreSQL: Léon: The Professional
+2025-08-06 19:29:46,166 [INFO] Great Procesado: Léon: The Professional
+2025-08-06 19:29:46,375 [INFO] Up PostgreSQL: Película insertada ID 44
+2025-08-06 19:29:46,424 [INFO] Up Insertados 3 actores para película ID 44
+2025-08-06 19:29:46,452 [INFO] Up PostgreSQL: Casablanca
+2025-08-06 19:29:46,500 [INFO] Great Procesado: Casablanca
+2025-08-06 19:29:47,475 [INFO] Up PostgreSQL: Película insertada ID 45
+2025-08-06 19:29:47,479 [INFO] Up Insertados 3 actores para película ID 45
+2025-08-06 19:29:47,517 [INFO] Up PostgreSQL: The Intouchables
+2025-08-06 19:29:47,522 [INFO] Up PostgreSQL: Película insertada ID 46
+2025-08-06 19:29:47,522 [INFO] Great Procesado: The Intouchables
+2025-08-06 19:29:47,525 [INFO] Up Insertados 3 actores para película ID 46
+2025-08-06 19:29:47,529 [INFO] Up PostgreSQL: American History X
+2025-08-06 19:29:47,529 [INFO] Great Procesado: American History X
+2025-08-06 19:29:47,816 [INFO] Up PostgreSQL: Película insertada ID 47
+2025-08-06 19:29:47,820 [INFO] Up Insertados 3 actores para película ID 47
+2025-08-06 19:29:47,854 [INFO] Up PostgreSQL: The Usual Suspects
+2025-08-06 19:29:47,868 [INFO] Great Procesado: The Usual Suspects
+2025-08-06 19:29:47,868 [INFO] Up PostgreSQL: Película insertada ID 48
+2025-08-06 19:29:47,872 [INFO] Up Insertados 3 actores para película ID 48
+2025-08-06 19:29:47,874 [INFO] Up PostgreSQL: Cinema Paradiso
+2025-08-06 19:29:47,874 [INFO] Great Procesado: Cinema Paradiso
+2025-08-06 19:29:48,168 [INFO] Up PostgreSQL: Película insertada ID 49
+2025-08-06 19:29:48,231 [INFO] Up Insertados 3 actores para película ID 49
+2025-08-06 19:29:48,242 [INFO] Up PostgreSQL: Alien
+2025-08-06 19:29:48,243 [INFO] Great Procesado: Alien
+2025-08-06 19:29:48,472 [INFO] Up PostgreSQL: Película insertada ID 50
+2025-08-06 19:29:48,476 [INFO] Up Insertados 3 actores para película ID 50
+2025-08-06 19:29:48,482 [INFO] Up PostgreSQL: Rear Window
+2025-08-06 19:29:48,483 [INFO] Great Procesado: Rear Window
+2025-08-06 19:29:48,965 [INFO] Up PostgreSQL: Película insertada ID 51
+2025-08-06 19:29:48,973 [INFO] Up Insertados 3 actores para película ID 51
+2025-08-06 19:29:48,975 [INFO] Up PostgreSQL: Modern Times
+2025-08-06 19:29:48,975 [INFO] Great Procesado: Modern Times
+2025-08-06 19:29:49,693 [INFO] Up PostgreSQL: Película insertada ID 53
+2025-08-06 19:29:49,709 [INFO] Up PostgreSQL: Película insertada ID 52
+2025-08-06 19:29:49,718 [INFO] Up Insertados 3 actores para película ID 53
+2025-08-06 19:29:49,719 [INFO] Up Insertados 3 actores para película ID 52
+2025-08-06 19:29:49,725 [INFO] Up PostgreSQL: Django Unchained
+2025-08-06 19:29:49,726 [INFO] Great Procesado: Django Unchained
+2025-08-06 19:29:49,726 [INFO] Up PostgreSQL: Once Upon a Time in the West
+2025-08-06 19:29:49,727 [INFO] Great Procesado: Once Upon a Time in the West
+2025-08-06 19:29:49,937 [INFO] Up PostgreSQL: Película insertada ID 54
+2025-08-06 19:29:49,942 [INFO] Up Insertados 3 actores para película ID 54
+2025-08-06 19:29:49,948 [INFO] Up PostgreSQL: City Lights
+2025-08-06 19:29:49,949 [INFO] Great Procesado: City Lights
+2025-08-06 19:29:50,589 [INFO] Up PostgreSQL: Película insertada ID 55
+2025-08-06 19:29:50,592 [INFO] Up Insertados 3 actores para película ID 55
+2025-08-06 19:29:50,598 [INFO] Up PostgreSQL: WALL·E
+2025-08-06 19:29:50,598 [INFO] Great Procesado: WALL·E
+2025-08-06 19:29:50,916 [INFO] Up PostgreSQL: Película insertada ID 56
+2025-08-06 19:29:50,920 [INFO] Up Insertados 3 actores para película ID 56
+2025-08-06 19:29:50,926 [INFO] Up PostgreSQL: Apocalypse Now
+2025-08-06 19:29:50,927 [INFO] Great Procesado: Apocalypse Now
+2025-08-06 19:29:51,075 [INFO] Up PostgreSQL: Película insertada ID 57
+2025-08-06 19:29:51,110 [INFO] Up Insertados 3 actores para película ID 57
+2025-08-06 19:29:51,118 [INFO] Up PostgreSQL: Memento
+2025-08-06 19:29:51,118 [INFO] Great Procesado: Memento
+2025-08-06 19:29:51,830 [INFO] Up PostgreSQL: Película insertada ID 58
+2025-08-06 19:29:51,833 [INFO] Up Insertados 3 actores para película ID 58
+2025-08-06 19:29:51,840 [INFO] Up PostgreSQL: Dune: Part Two
+2025-08-06 19:29:51,840 [INFO] Great Procesado: Dune: Part Two
+2025-08-06 19:29:52,504 [INFO] Up PostgreSQL: Película insertada ID 59
+2025-08-06 19:29:52,508 [INFO] Up Insertados 3 actores para película ID 59
+2025-08-06 19:29:52,515 [INFO] Up PostgreSQL: The Lives of Others
+2025-08-06 19:29:52,516 [INFO] Great Procesado: The Lives of Others
+2025-08-06 19:29:52,537 [INFO] Up PostgreSQL: Película insertada ID 60
+2025-08-06 19:29:52,541 [INFO] Up Insertados 3 actores para película ID 60
+2025-08-06 19:29:52,543 [INFO] Up PostgreSQL: Raiders of the Lost Ark
+2025-08-06 19:29:52,543 [INFO] Great Procesado: Raiders of the Lost Ark
+2025-08-06 19:29:53,174 [INFO] Up PostgreSQL: Película insertada ID 61
+2025-08-06 19:29:53,177 [INFO] Up Insertados 3 actores para película ID 61
+2025-08-06 19:29:53,183 [INFO] Up PostgreSQL: Avengers: Infinity War
+2025-08-06 19:29:53,184 [INFO] Great Procesado: Avengers: Infinity War
+2025-08-06 19:29:53,205 [INFO] Up PostgreSQL: Película insertada ID 62
+2025-08-06 19:29:53,209 [INFO] Up Insertados 3 actores para película ID 62
+2025-08-06 19:29:53,212 [INFO] Up PostgreSQL: Spider-Man: Into the Spider-Verse
+2025-08-06 19:29:53,213 [INFO] Great Procesado: Spider-Man: Into the Spider-Verse
+2025-08-06 19:29:54,147 [INFO] Up PostgreSQL: Película insertada ID 63
+2025-08-06 19:29:54,153 [INFO] Up Insertados 3 actores para película ID 63
+2025-08-06 19:29:54,182 [INFO] Up PostgreSQL: The Shining
+2025-08-06 19:29:54,195 [INFO] Great Procesado: The Shining
+2025-08-06 19:29:54,198 [INFO] Up PostgreSQL: Película insertada ID 64
+2025-08-06 19:29:54,202 [INFO] Up Insertados 3 actores para película ID 64
+2025-08-06 19:29:54,204 [INFO] Up PostgreSQL: Sunset Boulevard
+2025-08-06 19:29:54,204 [INFO] Great Procesado: Sunset Boulevard
+2025-08-06 19:29:54,441 [INFO] Up PostgreSQL: Película insertada ID 65
+2025-08-06 19:29:54,445 [INFO] Up Insertados 3 actores para película ID 65
+2025-08-06 19:29:54,465 [INFO] Up PostgreSQL: The Great Dictator
+2025-08-06 19:29:54,607 [INFO] Great Procesado: The Great Dictator
+2025-08-06 19:29:54,828 [INFO] Up PostgreSQL: Película insertada ID 66
+2025-08-06 19:29:54,831 [INFO] Up Insertados 3 actores para película ID 66
+2025-08-06 19:29:54,838 [INFO] Up PostgreSQL: Witness for the Prosecution
+2025-08-06 19:29:54,838 [INFO] Great Procesado: Witness for the Prosecution
+2025-08-06 19:29:55,003 [INFO] Up PostgreSQL: Película insertada ID 67
+2025-08-06 19:29:55,006 [INFO] Up Insertados 3 actores para película ID 67
+2025-08-06 19:29:55,013 [INFO] Up PostgreSQL: Paths of Glory
+2025-08-06 19:29:55,013 [INFO] Great Procesado: Paths of Glory
+2025-08-06 19:29:55,762 [INFO] Up PostgreSQL: Película insertada ID 68
+2025-08-06 19:29:55,765 [INFO] Up Insertados 3 actores para película ID 68
+2025-08-06 19:29:55,772 [INFO] Up PostgreSQL: Inglourious Basterds
+2025-08-06 19:29:55,772 [INFO] Great Procesado: Inglourious Basterds
+2025-08-06 19:29:55,944 [INFO] Up PostgreSQL: Película insertada ID 69
+2025-08-06 19:29:55,947 [INFO] Up Insertados 3 actores para película ID 69
+2025-08-06 19:29:55,954 [INFO] Up PostgreSQL: 12th Fail
+2025-08-06 19:29:55,954 [INFO] Great Procesado: 12th Fail
+2025-08-06 19:29:56,908 [INFO] Up PostgreSQL: Película insertada ID 70
+2025-08-06 19:29:56,913 [INFO] Up Insertados 3 actores para película ID 70
+2025-08-06 19:29:56,919 [INFO] Up PostgreSQL: The Dark Knight Rises
+2025-08-06 19:29:56,919 [INFO] Great Procesado: The Dark Knight Rises
+2025-08-06 19:29:57,059 [INFO] Up PostgreSQL: Película insertada ID 71
+2025-08-06 19:29:57,063 [INFO] Up Insertados 3 actores para película ID 71
+2025-08-06 19:29:57,066 [INFO] Up PostgreSQL: Aliens
+2025-08-06 19:29:57,066 [INFO] Great Procesado: Aliens
+2025-08-06 19:29:57,938 [INFO] Up PostgreSQL: Película insertada ID 72
+2025-08-06 19:29:57,942 [INFO] Up Insertados 3 actores para película ID 72
+2025-08-06 19:29:57,944 [INFO] Up PostgreSQL: Amadeus
+2025-08-06 19:29:57,945 [INFO] Great Procesado: Amadeus
+2025-08-06 19:29:57,958 [INFO] Up PostgreSQL: Película insertada ID 73
+2025-08-06 19:29:57,961 [INFO] Up Insertados 3 actores para película ID 73
+2025-08-06 19:29:57,963 [INFO] Up PostgreSQL: Coco
+2025-08-06 19:29:57,963 [INFO] Great Procesado: Coco
+2025-08-06 19:29:58,176 [INFO] Up PostgreSQL: Película insertada ID 74
+2025-08-06 19:29:58,179 [INFO] Up Insertados 3 actores para película ID 74
+2025-08-06 19:29:58,183 [INFO] Up PostgreSQL: Película insertada ID 75
+2025-08-06 19:29:58,187 [INFO] Up Insertados 3 actores para película ID 75
+2025-08-06 19:29:58,188 [INFO] Up PostgreSQL: Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+2025-08-06 19:29:58,190 [INFO] Great Procesado: Dr. Strangelove or: How I Learned to Stop Worrying and Love the Bomb
+2025-08-06 19:29:58,194 [INFO] Up PostgreSQL: Toy Story
+2025-08-06 19:29:58,195 [INFO] Great Procesado: Toy Story
+2025-08-06 19:29:58,665 [INFO] Up PostgreSQL: Película insertada ID 76
+2025-08-06 19:29:58,668 [INFO] Up Insertados 3 actores para película ID 76
+2025-08-06 19:29:58,674 [INFO] Up PostgreSQL: Good Will Hunting
+2025-08-06 19:29:58,676 [INFO] Great Procesado: Good Will Hunting
+2025-08-06 19:29:58,944 [INFO] Up PostgreSQL: Película insertada ID 77
+2025-08-06 19:29:58,950 [INFO] Up Insertados 3 actores para película ID 77
+2025-08-06 19:29:58,952 [INFO] Up PostgreSQL: Avengers: Endgame
+2025-08-06 19:29:58,952 [INFO] Great Procesado: Avengers: Endgame
+2025-08-06 19:29:59,478 [INFO] Up PostgreSQL: Película insertada ID 78
+2025-08-06 19:29:59,481 [INFO] Up Insertados 3 actores para película ID 78
+2025-08-06 19:29:59,487 [INFO] Up PostgreSQL: High and Low
+2025-08-06 19:29:59,488 [INFO] Great Procesado: High and Low
+2025-08-06 19:29:59,608 [INFO] Up PostgreSQL: Película insertada ID 79
+2025-08-06 19:29:59,616 [INFO] Up Insertados 3 actores para película ID 79
+2025-08-06 19:29:59,623 [INFO] Up PostgreSQL: Oldboy
+2025-08-06 19:29:59,623 [INFO] Great Procesado: Oldboy
+2025-08-06 19:30:00,195 [INFO] Up PostgreSQL: Película insertada ID 80
+2025-08-06 19:30:00,197 [INFO] Up Insertados 3 actores para película ID 80
+2025-08-06 19:30:00,199 [INFO] Up PostgreSQL: Das Boot
+2025-08-06 19:30:00,199 [INFO] Great Procesado: Das Boot
+2025-08-06 19:30:01,579 [INFO] Up PostgreSQL: Película insertada ID 81
+2025-08-06 19:30:01,621 [INFO] Up Insertados 3 actores para película ID 81
+2025-08-06 19:30:01,628 [INFO] Up PostgreSQL: Princess Mononoke
+2025-08-06 19:30:01,629 [INFO] Great Procesado: Princess Mononoke
+2025-08-06 19:30:02,230 [INFO] Up PostgreSQL: Película insertada ID 82
+2025-08-06 19:30:02,268 [INFO] Up Insertados 3 actores para película ID 82
+2025-08-06 19:30:02,276 [INFO] Up PostgreSQL: Braveheart
+2025-08-06 19:30:02,276 [INFO] Great Procesado: Braveheart
+2025-08-06 19:30:02,308 [INFO] Up PostgreSQL: Película insertada ID 83
+2025-08-06 19:30:02,310 [INFO] Up Insertados 3 actores para película ID 83
+2025-08-06 19:30:02,312 [INFO] Up PostgreSQL: Joker
+2025-08-06 19:30:02,312 [INFO] Great Procesado: Joker
+2025-08-06 19:30:02,324 [INFO] Up PostgreSQL: Película insertada ID 84
+2025-08-06 19:30:02,327 [INFO] Up Insertados 3 actores para película ID 84
+2025-08-06 19:30:02,329 [INFO] Up PostgreSQL: American Beauty
+2025-08-06 19:30:02,329 [INFO] Great Procesado: American Beauty
+2025-08-06 19:30:02,734 [INFO] Up PostgreSQL: Película insertada ID 85
+2025-08-06 19:30:02,739 [INFO] Up Insertados 3 actores para película ID 85
+2025-08-06 19:30:02,746 [INFO] Up PostgreSQL: Your Name.
+2025-08-06 19:30:02,747 [INFO] Great Procesado: Your Name.
+2025-08-06 19:30:03,150 [INFO] Up PostgreSQL: Película insertada ID 86
+2025-08-06 19:30:03,154 [INFO] Up Insertados 3 actores para película ID 86
+2025-08-06 19:30:03,160 [INFO] Up PostgreSQL: 3 Idiots
+2025-08-06 19:30:03,161 [INFO] Great Procesado: 3 Idiots
+2025-08-06 19:30:05,592 [INFO] Up PostgreSQL: Película insertada ID 87
+2025-08-06 19:30:05,600 [INFO] Up Insertados 3 actores para película ID 87
+2025-08-06 19:30:05,602 [INFO] Up PostgreSQL: Requiem for a Dream
+2025-08-06 19:30:05,602 [INFO] Great Procesado: Requiem for a Dream
+2025-08-06 19:30:05,705 [INFO] Up PostgreSQL: Película insertada ID 88
+2025-08-06 19:30:05,708 [INFO] Up Insertados 3 actores para película ID 88
+2025-08-06 19:30:05,715 [INFO] Up PostgreSQL: Once Upon a Time in America
+2025-08-06 19:30:05,715 [INFO] Great Procesado: Once Upon a Time in America
+2025-08-06 19:30:06,302 [INFO] Up PostgreSQL: Película insertada ID 89
+2025-08-06 19:30:06,305 [INFO] Up Insertados 3 actores para película ID 89
+2025-08-06 19:30:06,311 [INFO] Up PostgreSQL: The Hunt
+2025-08-06 19:30:06,312 [INFO] Great Procesado: The Hunt
+2025-08-06 19:30:06,714 [INFO] Up PostgreSQL: Película insertada ID 90
+2025-08-06 19:30:06,716 [INFO] Up Insertados 3 actores para película ID 90
+2025-08-06 19:30:06,723 [INFO] Up PostgreSQL: Toy Story 3
+2025-08-06 19:30:06,723 [INFO] Great Procesado: Toy Story 3
+2025-08-06 19:30:07,804 [INFO] Up PostgreSQL: Película insertada ID 91
+2025-08-06 19:30:07,807 [INFO] Up Insertados 3 actores para película ID 91
+2025-08-06 19:30:07,813 [INFO] Up PostgreSQL: Capernaum
+2025-08-06 19:30:07,814 [INFO] Great Procesado: Capernaum
+2025-08-06 19:30:07,895 [INFO] Up PostgreSQL: Película insertada ID 92
+2025-08-06 19:30:07,896 [INFO] Up PostgreSQL: Película insertada ID 93
+2025-08-06 19:30:07,899 [INFO] Up Insertados 3 actores para película ID 92
+2025-08-06 19:30:07,899 [INFO] Up Insertados 3 actores para película ID 93
+2025-08-06 19:30:07,906 [INFO] Up PostgreSQL: Ikiru
+2025-08-06 19:30:07,906 [INFO] Great Procesado: Ikiru
+2025-08-06 19:30:07,906 [INFO] Up PostgreSQL: Come and See
+2025-08-06 19:30:07,907 [INFO] Great Procesado: Come and See
+2025-08-06 19:30:08,225 [INFO] Up PostgreSQL: Película insertada ID 94
+2025-08-06 19:30:08,229 [INFO] Up Insertados 3 actores para película ID 94
+2025-08-06 19:30:08,235 [INFO] Up PostgreSQL: Singin' in the Rain
+2025-08-06 19:30:08,235 [INFO] Great Procesado: Singin' in the Rain
+2025-08-06 19:30:08,943 [INFO] Up PostgreSQL: Película insertada ID 95
+2025-08-06 19:30:09,006 [INFO] Up Insertados 3 actores para película ID 95
+2025-08-06 19:30:09,038 [INFO] Up PostgreSQL: Star Wars: Episode VI - Return of the Jedi
+2025-08-06 19:30:09,083 [INFO] Great Procesado: Star Wars: Episode VI - Return of the Jedi
+2025-08-06 19:30:09,536 [INFO] Up PostgreSQL: Película insertada ID 96
+2025-08-06 19:30:09,542 [INFO] Up Insertados 3 actores para película ID 96
+2025-08-06 19:30:09,548 [INFO] Up PostgreSQL: Eternal Sunshine of the Spotless Mind
+2025-08-06 19:30:09,548 [INFO] Great Procesado: Eternal Sunshine of the Spotless Mind
+2025-08-06 19:30:10,250 [INFO] Up PostgreSQL: Película insertada ID 97
+2025-08-06 19:30:10,252 [INFO] Up Insertados 3 actores para película ID 97
+2025-08-06 19:30:10,258 [INFO] Up PostgreSQL: Incendies
+2025-08-06 19:30:10,259 [INFO] Great Procesado: Incendies
+2025-08-06 19:30:10,472 [INFO] Up PostgreSQL: Película insertada ID 98
+2025-08-06 19:30:10,475 [INFO] Up Insertados 3 actores para película ID 98
+2025-08-06 19:30:10,476 [INFO] Up PostgreSQL: Película insertada ID 99
+2025-08-06 19:30:10,477 [INFO] Up PostgreSQL: 2001: A Space Odyssey
+2025-08-06 19:30:10,478 [INFO] Great Procesado: 2001: A Space Odyssey
+2025-08-06 19:30:10,479 [INFO] Up Insertados 3 actores para película ID 99
+2025-08-06 19:30:10,481 [INFO] Up PostgreSQL: The Apartment
+2025-08-06 19:30:10,482 [INFO] Great Procesado: The Apartment
+2025-08-06 19:30:11,251 [INFO] Up PostgreSQL: Película insertada ID 100
+2025-08-06 19:30:11,290 [INFO] Up Insertados 3 actores para película ID 100
+2025-08-06 19:30:11,322 [INFO] Up PostgreSQL: Película insertada ID 101
+2025-08-06 19:30:11,322 [INFO] Up PostgreSQL: Reservoir Dogs
+2025-08-06 19:30:11,323 [INFO] Great Procesado: Reservoir Dogs
+2025-08-06 19:30:11,326 [INFO] Up Insertados 3 actores para película ID 101
+2025-08-06 19:30:11,328 [INFO] Up PostgreSQL: Lawrence of Arabia
+2025-08-06 19:30:11,328 [INFO] Great Procesado: Lawrence of Arabia
+2025-08-06 19:30:12,719 [INFO] Up PostgreSQL: Película insertada ID 102
+2025-08-06 19:30:12,722 [INFO] Up Insertados 3 actores para película ID 102
+2025-08-06 19:30:12,729 [INFO] Up PostgreSQL: Heat
+2025-08-06 19:30:12,729 [INFO] Great Procesado: Heat
+2025-08-06 19:30:12,798 [INFO] Up PostgreSQL: Película insertada ID 103
+2025-08-06 19:30:12,802 [INFO] Up Insertados 3 actores para película ID 103
+2025-08-06 19:30:12,808 [INFO] Up PostgreSQL: Up
+2025-08-06 19:30:12,809 [INFO] Great Procesado: Up
+2025-08-06 19:30:12,815 [INFO] Up PostgreSQL: Película insertada ID 104
+2025-08-06 19:30:12,817 [INFO] Up Insertados 3 actores para película ID 104
+2025-08-06 19:30:12,819 [INFO] Up PostgreSQL: North by Northwest
+2025-08-06 19:30:12,820 [INFO] Great Procesado: North by Northwest
+2025-08-06 19:30:12,848 [INFO] Up PostgreSQL: Película insertada ID 105
+2025-08-06 19:30:12,851 [INFO] Up Insertados 3 actores para película ID 105
+2025-08-06 19:30:12,856 [INFO] Up PostgreSQL: Double Indemnity
+2025-08-06 19:30:12,856 [INFO] Great Procesado: Double Indemnity
+2025-08-06 19:30:12,865 [INFO] Up PostgreSQL: Película insertada ID 106
+2025-08-06 19:30:12,868 [INFO] Up Insertados 3 actores para película ID 106
+2025-08-06 19:30:12,870 [INFO] Up PostgreSQL: Scarface
+2025-08-06 19:30:12,871 [INFO] Great Procesado: Scarface
+2025-08-06 19:30:13,675 [INFO] Up PostgreSQL: Película insertada ID 107
+2025-08-06 19:30:13,678 [INFO] Up Insertados 3 actores para película ID 107
+2025-08-06 19:30:13,684 [INFO] Up PostgreSQL: M
+2025-08-06 19:30:13,685 [INFO] Great Procesado: M
+2025-08-06 19:30:13,871 [INFO] Up PostgreSQL: Película insertada ID 108
+2025-08-06 19:30:13,873 [INFO] Up Insertados 3 actores para película ID 108
+2025-08-06 19:30:13,880 [INFO] Up PostgreSQL: Citizen Kane
+2025-08-06 19:30:13,880 [INFO] Great Procesado: Citizen Kane
+2025-08-06 19:30:14,552 [INFO] Up PostgreSQL: Película insertada ID 109
+2025-08-06 19:30:14,556 [INFO] Up Insertados 3 actores para película ID 109
+2025-08-06 19:30:14,563 [INFO] Up PostgreSQL: Amélie
+2025-08-06 19:30:14,564 [INFO] Great Procesado: Amélie
+2025-08-06 19:30:14,600 [INFO] Up PostgreSQL: Película insertada ID 110
+2025-08-06 19:30:14,603 [INFO] Up Insertados 3 actores para película ID 110
+2025-08-06 19:30:14,605 [INFO] Up PostgreSQL: Vertigo
+2025-08-06 19:30:14,605 [INFO] Great Procesado: Vertigo
+2025-08-06 19:30:14,851 [INFO] Up PostgreSQL: Película insertada ID 111
+2025-08-06 19:30:14,854 [INFO] Up Insertados 3 actores para película ID 111
+2025-08-06 19:30:14,860 [INFO] Up PostgreSQL: Full Metal Jacket
+2025-08-06 19:30:14,860 [INFO] Great Procesado: Full Metal Jacket
+2025-08-06 19:30:15,982 [INFO] Up PostgreSQL: Película insertada ID 112
+2025-08-06 19:30:15,985 [INFO] Up PostgreSQL: Película insertada ID 113
+2025-08-06 19:30:15,986 [INFO] Up Insertados 3 actores para película ID 112
+2025-08-06 19:30:15,988 [INFO] Up Insertados 3 actores para película ID 113
+2025-08-06 19:30:15,993 [INFO] Up PostgreSQL: A Separation
+2025-08-06 19:30:15,993 [INFO] Great Procesado: A Separation
+2025-08-06 19:30:15,993 [INFO] Up PostgreSQL: Like Stars on Earth
+2025-08-06 19:30:15,994 [INFO] Great Procesado: Like Stars on Earth
+2025-08-06 19:30:16,217 [INFO] Up PostgreSQL: Película insertada ID 114
+2025-08-06 19:30:16,220 [INFO] Up Insertados 3 actores para película ID 114
+2025-08-06 19:30:16,227 [INFO] Up PostgreSQL: Indiana Jones and the Last Crusade
+2025-08-06 19:30:16,228 [INFO] Great Procesado: Indiana Jones and the Last Crusade
+2025-08-06 19:30:17,507 [INFO] Up PostgreSQL: Película insertada ID 115
+2025-08-06 19:30:17,512 [INFO] Up Insertados 3 actores para película ID 115
+2025-08-06 19:30:17,520 [INFO] Up PostgreSQL: To Kill a Mockingbird
+2025-08-06 19:30:17,520 [INFO] Great Procesado: To Kill a Mockingbird
+2025-08-06 19:30:17,710 [INFO] Up PostgreSQL: Película insertada ID 116
+2025-08-06 19:30:17,717 [INFO] Up Insertados 3 actores para película ID 116
+2025-08-06 19:30:17,724 [INFO] Up PostgreSQL: A Clockwork Orange
+2025-08-06 19:30:17,724 [INFO] Great Procesado: A Clockwork Orange
+2025-08-06 19:30:17,733 [INFO] Up PostgreSQL: Película insertada ID 117
+2025-08-06 19:30:17,736 [INFO] Up Insertados 3 actores para película ID 117
+2025-08-06 19:30:17,739 [INFO] Up PostgreSQL: Die Hard
+2025-08-06 19:30:17,740 [INFO] Great Procesado: Die Hard
+2025-08-06 19:30:18,177 [INFO] Up PostgreSQL: Película insertada ID 118
+2025-08-06 19:30:18,178 [INFO] Up PostgreSQL: Película insertada ID 119
+2025-08-06 19:30:18,181 [INFO] Up Insertados 3 actores para película ID 118
+2025-08-06 19:30:18,182 [INFO] Up Insertados 3 actores para película ID 119
+2025-08-06 19:30:18,183 [INFO] Up PostgreSQL: Snatch
+2025-08-06 19:30:18,183 [INFO] Great Procesado: Snatch
+2025-08-06 19:30:18,184 [INFO] Up PostgreSQL: The Sting
+2025-08-06 19:30:18,185 [INFO] Great Procesado: The Sting
+2025-08-06 19:30:19,131 [INFO] Up PostgreSQL: Película insertada ID 120
+2025-08-06 19:30:19,134 [INFO] Up Insertados 3 actores para película ID 120
+2025-08-06 19:30:19,140 [INFO] Up PostgreSQL: Oppenheimer
+2025-08-06 19:30:19,141 [INFO] Great Procesado: Oppenheimer
+2025-08-06 19:30:19,296 [INFO] Up PostgreSQL: Película insertada ID 121
+2025-08-06 19:30:19,299 [INFO] Up Insertados 3 actores para película ID 121
+2025-08-06 19:30:19,301 [INFO] Up PostgreSQL: Metropolis
+2025-08-06 19:30:19,302 [INFO] Great Procesado: Metropolis
+2025-08-06 19:30:19,552 [INFO] Up PostgreSQL: Película insertada ID 122
+2025-08-06 19:30:19,589 [INFO] Up Insertados 3 actores para película ID 122
+2025-08-06 19:30:19,598 [INFO] Up PostgreSQL: 1917
+2025-08-06 19:30:19,646 [INFO] Up PostgreSQL: Película insertada ID 123
+2025-08-06 19:30:19,663 [INFO] Great Procesado: 1917
+2025-08-06 19:30:19,667 [INFO] Up Insertados 3 actores para película ID 123
+2025-08-06 19:30:19,673 [INFO] Up PostgreSQL: L.A. Confidential
+2025-08-06 19:30:19,674 [INFO] Great Procesado: L.A. Confidential
+2025-08-06 19:30:19,915 [INFO] Up PostgreSQL: Película insertada ID 124
+2025-08-06 19:30:19,920 [INFO] Up Insertados 3 actores para película ID 124
+2025-08-06 19:30:19,922 [INFO] Up PostgreSQL: The Chaos Class Failed the Class
+2025-08-06 19:30:19,922 [INFO] Great Procesado: The Chaos Class Failed the Class
+2025-08-06 19:30:21,129 [INFO] Up PostgreSQL: Película insertada ID 125
+2025-08-06 19:30:21,129 [INFO] Up PostgreSQL: Película insertada ID 126
+2025-08-06 19:30:21,134 [INFO] Up Insertados 3 actores para película ID 126
+2025-08-06 19:30:21,134 [INFO] Up Insertados 3 actores para película ID 125
+2025-08-06 19:30:21,141 [INFO] Up PostgreSQL: Downfall
+2025-08-06 19:30:21,141 [INFO] Up PostgreSQL: Bicycle Thieves
+2025-08-06 19:30:21,141 [INFO] Great Procesado: Downfall
+2025-08-06 19:30:21,141 [INFO] Great Procesado: Bicycle Thieves
+2025-08-06 19:30:21,151 [INFO] Up PostgreSQL: Película insertada ID 127
+2025-08-06 19:30:21,154 [INFO] Up Insertados 3 actores para película ID 127
+2025-08-06 19:30:21,155 [INFO] Up PostgreSQL: Dangal
+2025-08-06 19:30:21,156 [INFO] Great Procesado: Dangal
+2025-08-06 19:30:21,270 [INFO] Up PostgreSQL: Película insertada ID 128
+2025-08-06 19:30:21,274 [INFO] Up Insertados 3 actores para película ID 128
+2025-08-06 19:30:21,281 [INFO] Up PostgreSQL: The Wolf of Wall Street
+2025-08-06 19:30:21,282 [INFO] Great Procesado: The Wolf of Wall Street
+2025-08-06 19:30:22,072 [INFO] Up PostgreSQL: Película insertada ID 129
+2025-08-06 19:30:22,075 [INFO] Up Insertados 3 actores para película ID 129
+2025-08-06 19:30:22,081 [INFO] Up PostgreSQL: Hamilton
+2025-08-06 19:30:22,081 [INFO] Great Procesado: Hamilton
+2025-08-06 19:30:22,544 [INFO] Up PostgreSQL: Película insertada ID 130
+2025-08-06 19:30:22,546 [INFO] Up Insertados 3 actores para película ID 130
+2025-08-06 19:30:22,553 [INFO] Up PostgreSQL: Green Book
+2025-08-06 19:30:22,553 [INFO] Great Procesado: Green Book
+2025-08-06 19:30:22,845 [INFO] Up PostgreSQL: Película insertada ID 131
+2025-08-06 19:30:22,848 [INFO] Up Insertados 3 actores para película ID 131
+2025-08-06 19:30:22,855 [INFO] Up PostgreSQL: The Truman Show
+2025-08-06 19:30:22,855 [INFO] Great Procesado: The Truman Show
+2025-08-06 19:30:22,878 [INFO] Up PostgreSQL: Película insertada ID 132
+2025-08-06 19:30:22,880 [INFO] Up Insertados 3 actores para película ID 132
+2025-08-06 19:30:22,882 [INFO] Up PostgreSQL: Taxi Driver
+2025-08-06 19:30:22,882 [INFO] Great Procesado: Taxi Driver
+2025-08-06 19:30:24,145 [INFO] Up PostgreSQL: Película insertada ID 133
+2025-08-06 19:30:24,155 [INFO] Up Insertados 3 actores para película ID 133
+2025-08-06 19:30:24,164 [INFO] Up PostgreSQL: For a Few Dollars More
+2025-08-06 19:30:24,164 [INFO] Great Procesado: For a Few Dollars More
+2025-08-06 19:30:24,613 [INFO] Up PostgreSQL: Película insertada ID 134
+2025-08-06 19:30:24,615 [INFO] Up Insertados 3 actores para película ID 134
+2025-08-06 19:30:24,618 [INFO] Up PostgreSQL: Shutter Island
+2025-08-06 19:30:24,618 [INFO] Great Procesado: Shutter Island
+2025-08-06 19:30:24,803 [INFO] Up PostgreSQL: Película insertada ID 135
+2025-08-06 19:30:24,927 [INFO] Up PostgreSQL: Película insertada ID 136
+2025-08-06 19:30:24,929 [INFO] Up Insertados 3 actores para película ID 135
+2025-08-06 19:30:24,946 [INFO] Up PostgreSQL: The Kid
+2025-08-06 19:30:24,961 [INFO] Up Insertados 3 actores para película ID 136
+2025-08-06 19:30:24,963 [INFO] Great Procesado: The Kid
+2025-08-06 19:30:24,966 [INFO] Up PostgreSQL: Batman Begins
+2025-08-06 19:30:24,968 [INFO] Great Procesado: Batman Begins
+2025-08-06 19:30:25,713 [INFO] Up PostgreSQL: Película insertada ID 137
+2025-08-06 19:30:25,732 [INFO] Up Insertados 3 actores para película ID 137
+2025-08-06 19:30:25,740 [INFO] Up PostgreSQL: Judgment at Nuremberg
+2025-08-06 19:30:25,740 [INFO] Great Procesado: Judgment at Nuremberg
+2025-08-06 19:30:26,354 [INFO] Up PostgreSQL: Película insertada ID 138
+2025-08-06 19:30:26,357 [INFO] Up Insertados 3 actores para película ID 138
+2025-08-06 19:30:26,360 [INFO] Up PostgreSQL: Película insertada ID 139
+2025-08-06 19:30:26,360 [INFO] Up PostgreSQL: Película insertada ID 140
+2025-08-06 19:30:26,364 [INFO] Up Insertados 3 actores para película ID 140
+2025-08-06 19:30:26,364 [INFO] Up PostgreSQL: Some Like It Hot
+2025-08-06 19:30:26,364 [INFO] Up Insertados 3 actores para película ID 139
+2025-08-06 19:30:26,365 [INFO] Great Procesado: Some Like It Hot
+2025-08-06 19:30:26,367 [INFO] Up PostgreSQL: The Father
+2025-08-06 19:30:26,367 [INFO] Great Procesado: The Father
+2025-08-06 19:30:26,368 [INFO] Up PostgreSQL: Jurassic Park
+2025-08-06 19:30:26,369 [INFO] Great Procesado: Jurassic Park
+2025-08-06 19:30:27,435 [INFO] Up PostgreSQL: Película insertada ID 141
+2025-08-06 19:30:27,438 [INFO] Up Insertados 3 actores para película ID 141
+2025-08-06 19:30:27,444 [INFO] Up PostgreSQL: The Sixth Sense
+2025-08-06 19:30:27,445 [INFO] Great Procesado: The Sixth Sense
+2025-08-06 19:30:27,660 [INFO] Up PostgreSQL: Película insertada ID 142
+2025-08-06 19:30:27,663 [INFO] Up Insertados 3 actores para película ID 142
+2025-08-06 19:30:27,669 [INFO] Up PostgreSQL: All About Eve
+2025-08-06 19:30:27,670 [INFO] Great Procesado: All About Eve
+2025-08-06 19:30:28,048 [INFO] Up PostgreSQL: Película insertada ID 143
+2025-08-06 19:30:28,051 [INFO] Up Insertados 3 actores para película ID 143
+2025-08-06 19:30:28,051 [INFO] Up PostgreSQL: Película insertada ID 144
+2025-08-06 19:30:28,054 [INFO] Up PostgreSQL: Ran
+2025-08-06 19:30:28,054 [INFO] Great Procesado: Ran
+2025-08-06 19:30:28,056 [INFO] Up Insertados 3 actores para película ID 144
+2025-08-06 19:30:28,058 [INFO] Up PostgreSQL: There Will Be Blood
+2025-08-06 19:30:28,058 [INFO] Great Procesado: There Will Be Blood
+2025-08-06 19:30:28,486 [INFO] Up PostgreSQL: Película insertada ID 145
+2025-08-06 19:30:28,552 [INFO] Up PostgreSQL: Película insertada ID 146
+2025-08-06 19:30:28,573 [INFO] Up Insertados 3 actores para película ID 145
+2025-08-06 19:30:28,575 [INFO] Up Insertados 3 actores para película ID 146
+2025-08-06 19:30:28,580 [INFO] Up PostgreSQL: Top Gun: Maverick
+2025-08-06 19:30:28,580 [INFO] Great Procesado: Top Gun: Maverick
+2025-08-06 19:30:28,581 [INFO] Up PostgreSQL: Casino
+2025-08-06 19:30:28,582 [INFO] Great Procesado: Casino
+2025-08-06 19:30:29,408 [INFO] Up PostgreSQL: Película insertada ID 147
+2025-08-06 19:30:29,410 [INFO] Up Insertados 3 actores para película ID 147
+2025-08-06 19:30:29,412 [INFO] Up PostgreSQL: No Country for Old Men
+2025-08-06 19:30:29,412 [INFO] Great Procesado: No Country for Old Men
+2025-08-06 19:30:29,984 [INFO] Up PostgreSQL: Película insertada ID 148
+2025-08-06 19:30:29,985 [INFO] Up PostgreSQL: Película insertada ID 149
+2025-08-06 19:30:29,987 [INFO] Up Insertados 3 actores para película ID 148
+2025-08-06 19:30:29,988 [INFO] Up Insertados 3 actores para película ID 149
+2025-08-06 19:30:29,994 [INFO] Up PostgreSQL: Pan's Labyrinth
+2025-08-06 19:30:29,994 [INFO] Great Procesado: Pan's Labyrinth
+2025-08-06 19:30:29,995 [INFO] Up PostgreSQL: Unforgiven
+2025-08-06 19:30:29,995 [INFO] Up PostgreSQL: Película insertada ID 150
+2025-08-06 19:30:29,995 [INFO] Great Procesado: Unforgiven
+2025-08-06 19:30:29,998 [INFO] Up Insertados 3 actores para película ID 150
+2025-08-06 19:30:30,000 [INFO] Up PostgreSQL: The Thing
+2025-08-06 19:30:30,000 [INFO] Great Procesado: The Thing
+2025-08-06 19:30:31,959 [INFO] Up PostgreSQL: Película insertada ID 151
+2025-08-06 19:30:31,962 [INFO] Up Insertados 3 actores para película ID 151
+2025-08-06 19:30:31,969 [INFO] Up PostgreSQL: Kill Bill: Vol. 1
+2025-08-06 19:30:31,992 [INFO] Great Procesado: Kill Bill: Vol. 1
+2025-08-06 19:30:32,009 [INFO] Up PostgreSQL: Película insertada ID 152
+2025-08-06 19:30:32,014 [INFO] Up PostgreSQL: Película insertada ID 153
+2025-08-06 19:30:32,070 [INFO] Up PostgreSQL: Película insertada ID 154
+2025-08-06 19:30:32,086 [INFO] Up Insertados 3 actores para película ID 153
+2025-08-06 19:30:32,100 [INFO] Up Insertados 3 actores para película ID 152
+2025-08-06 19:30:32,104 [INFO] Up Insertados 3 actores para película ID 154
+2025-08-06 19:30:32,106 [INFO] Up PostgreSQL: The Best of Youth
+2025-08-06 19:30:32,107 [INFO] Great Procesado: The Best of Youth
+2025-08-06 19:30:32,107 [INFO] Up PostgreSQL: Finding Nemo
+2025-08-06 19:30:32,107 [INFO] Up PostgreSQL: Prisoners
+2025-08-06 19:30:32,108 [INFO] Great Procesado: Finding Nemo
+2025-08-06 19:30:32,109 [INFO] Great Procesado: Prisoners
+2025-08-06 19:30:32,308 [INFO] Up PostgreSQL: Película insertada ID 155
+2025-08-06 19:30:32,312 [INFO] Up Insertados 3 actores para película ID 155
+2025-08-06 19:30:32,323 [INFO] Up PostgreSQL: A Beautiful Mind
+2025-08-06 19:30:32,323 [INFO] Great Procesado: A Beautiful Mind
+2025-08-06 19:30:32,794 [INFO] Up PostgreSQL: Película insertada ID 156
+2025-08-06 19:30:32,797 [INFO] Up Insertados 3 actores para película ID 156
+2025-08-06 19:30:32,804 [INFO] Up PostgreSQL: The Treasure of the Sierra Madre
+2025-08-06 19:30:32,804 [INFO] Great Procesado: The Treasure of the Sierra Madre
+2025-08-06 19:30:33,078 [INFO] Up PostgreSQL: Película insertada ID 157
+2025-08-06 19:30:33,081 [INFO] Up Insertados 3 actores para película ID 157
+2025-08-06 19:30:33,084 [INFO] Up PostgreSQL: The Great Escape
+2025-08-06 19:30:33,085 [INFO] Great Procesado: The Great Escape
+2025-08-06 19:30:33,105 [INFO] Up PostgreSQL: Película insertada ID 158
+2025-08-06 19:30:33,108 [INFO] Up Insertados 3 actores para película ID 158
+2025-08-06 19:30:33,111 [INFO] Up PostgreSQL: Yojimbo
+2025-08-06 19:30:33,116 [INFO] Great Procesado: Yojimbo
+2025-08-06 19:30:33,592 [INFO] Up PostgreSQL: Película insertada ID 159
+2025-08-06 19:30:33,594 [INFO] Up Insertados 3 actores para película ID 159
+2025-08-06 19:30:33,601 [INFO] Up PostgreSQL: Monty Python and the Holy Grail
+2025-08-06 19:30:33,601 [INFO] Great Procesado: Monty Python and the Holy Grail
+2025-08-06 19:30:34,254 [INFO] Up PostgreSQL: Película insertada ID 160
+2025-08-06 19:30:34,257 [INFO] Up Insertados 3 actores para película ID 160
+2025-08-06 19:30:34,263 [INFO] Up PostgreSQL: Howl's Moving Castle
+2025-08-06 19:30:34,263 [INFO] Great Procesado: Howl's Moving Castle
+2025-08-06 19:30:35,187 [INFO] Up PostgreSQL: Película insertada ID 161
+2025-08-06 19:30:35,191 [INFO] Up Insertados 3 actores para película ID 161
+2025-08-06 19:30:35,223 [INFO] Up PostgreSQL: The Elephant Man
+2025-08-06 19:30:35,228 [INFO] Great Procesado: The Elephant Man
+2025-08-06 19:30:35,668 [INFO] Up PostgreSQL: Película insertada ID 162
+2025-08-06 19:30:35,673 [INFO] Up Insertados 3 actores para película ID 162
+2025-08-06 19:30:35,680 [INFO] Up PostgreSQL: Klaus
+2025-08-06 19:30:35,681 [INFO] Great Procesado: Klaus
+2025-08-06 19:30:35,900 [INFO] Up PostgreSQL: Película insertada ID 163
+2025-08-06 19:30:35,905 [INFO] Up Insertados 3 actores para película ID 163
+2025-08-06 19:30:35,913 [INFO] Up PostgreSQL: Lock, Stock and Two Smoking Barrels
+2025-08-06 19:30:35,914 [INFO] Great Procesado: Lock, Stock and Two Smoking Barrels
+2025-08-06 19:30:36,284 [INFO] Up PostgreSQL: Película insertada ID 164
+2025-08-06 19:30:36,288 [INFO] Up Insertados 3 actores para película ID 164
+2025-08-06 19:30:36,295 [INFO] Up PostgreSQL: Rashomon
+2025-08-06 19:30:36,295 [INFO] Great Procesado: Rashomon
+2025-08-06 19:30:36,373 [INFO] Up PostgreSQL: Película insertada ID 165
+2025-08-06 19:30:36,376 [INFO] Up Insertados 3 actores para película ID 165
+2025-08-06 19:30:36,382 [INFO] Up PostgreSQL: Chinatown
+2025-08-06 19:30:36,382 [INFO] Great Procesado: Chinatown
+2025-08-06 19:30:37,173 [INFO] Up PostgreSQL: Película insertada ID 166
+2025-08-06 19:30:37,177 [INFO] Up Insertados 3 actores para película ID 166
+2025-08-06 19:30:37,183 [INFO] Up PostgreSQL: Dial M for Murder
+2025-08-06 19:30:37,183 [INFO] Great Procesado: Dial M for Murder
+2025-08-06 19:30:37,249 [INFO] Up PostgreSQL: Película insertada ID 167
+2025-08-06 19:30:37,251 [INFO] Up Insertados 3 actores para película ID 167
+2025-08-06 19:30:37,257 [INFO] Up PostgreSQL: Gone with the Wind
+2025-08-06 19:30:37,258 [INFO] Great Procesado: Gone with the Wind
+2025-08-06 19:30:37,284 [INFO] Up PostgreSQL: Película insertada ID 168
+2025-08-06 19:30:37,287 [INFO] Up Insertados 3 actores para película ID 168
+2025-08-06 19:30:37,289 [INFO] Up PostgreSQL: The Secret in Their Eyes
+2025-08-06 19:30:37,290 [INFO] Great Procesado: The Secret in Their Eyes
+2025-08-06 19:30:37,298 [INFO] Up PostgreSQL: Película insertada ID 169
+2025-08-06 19:30:37,301 [INFO] Up Insertados 3 actores para película ID 169
+2025-08-06 19:30:37,303 [INFO] Up PostgreSQL: V for Vendetta
+2025-08-06 19:30:37,303 [INFO] Great Procesado: V for Vendetta
+2025-08-06 19:30:38,220 [INFO] Up PostgreSQL: Película insertada ID 170
+2025-08-06 19:30:38,222 [INFO] Up Insertados 3 actores para película ID 170
+2025-08-06 19:30:38,224 [INFO] Up PostgreSQL: Three Billboards Outside Ebbing, Missouri
+2025-08-06 19:30:38,224 [INFO] Great Procesado: Three Billboards Outside Ebbing, Missouri
+2025-08-06 19:30:38,747 [INFO] Up PostgreSQL: Película insertada ID 171
+2025-08-06 19:30:38,750 [INFO] Up Insertados 3 actores para película ID 171
+2025-08-06 19:30:38,756 [INFO] Up PostgreSQL: Inside Out
+2025-08-06 19:30:38,756 [INFO] Great Procesado: Inside Out
+2025-08-06 19:30:39,992 [INFO] Up PostgreSQL: Película insertada ID 172
+2025-08-06 19:30:39,998 [INFO] Up Insertados 3 actores para película ID 172
+2025-08-06 19:30:40,006 [INFO] Up PostgreSQL: Catch Me If You Can
+2025-08-06 19:30:40,006 [INFO] Great Procesado: Catch Me If You Can
+2025-08-06 19:30:40,613 [INFO] Up PostgreSQL: Película insertada ID 173
+2025-08-06 19:30:40,616 [INFO] Up Insertados 3 actores para película ID 173
+2025-08-06 19:30:40,625 [INFO] Up PostgreSQL: The Bridge on the River Kwai
+2025-08-06 19:30:40,626 [INFO] Great Procesado: The Bridge on the River Kwai
+2025-08-06 19:30:40,634 [INFO] Up PostgreSQL: Película insertada ID 174
+2025-08-06 19:30:40,638 [INFO] Up Insertados 3 actores para película ID 174
+2025-08-06 19:30:40,638 [INFO] Up PostgreSQL: Película insertada ID 175
+2025-08-06 19:30:40,639 [INFO] Up PostgreSQL: Warrior
+2025-08-06 19:30:40,640 [INFO] Great Procesado: Warrior
+2025-08-06 19:30:40,641 [INFO] Up Insertados 3 actores para película ID 175
+2025-08-06 19:30:40,645 [INFO] Up PostgreSQL: Harry Potter and the Deathly Hallows: Part 2
+2025-08-06 19:30:40,645 [INFO] Great Procesado: Harry Potter and the Deathly Hallows: Part 2
+2025-08-06 19:30:41,213 [INFO] Up PostgreSQL: Película insertada ID 177
+2025-08-06 19:30:41,231 [INFO] Up PostgreSQL: Película insertada ID 176
+2025-08-06 19:30:41,243 [INFO] Up Insertados 3 actores para película ID 177
+2025-08-06 19:30:41,244 [INFO] Up Insertados 3 actores para película ID 176
+2025-08-06 19:30:41,250 [INFO] Up PostgreSQL: The Wild Robot
+2025-08-06 19:30:41,250 [INFO] Great Procesado: The Wild Robot
+2025-08-06 19:30:41,251 [INFO] Up PostgreSQL: Fargo
+2025-08-06 19:30:41,252 [INFO] Great Procesado: Fargo
+2025-08-06 19:30:42,077 [INFO] Up PostgreSQL: Película insertada ID 178
+2025-08-06 19:30:42,105 [INFO] Up PostgreSQL: Película insertada ID 179
+2025-08-06 19:30:42,109 [INFO] Up PostgreSQL: Película insertada ID 180
+2025-08-06 19:30:42,110 [INFO] Up Insertados 3 actores para película ID 178
+2025-08-06 19:30:42,112 [INFO] Up Insertados 3 actores para película ID 179
+2025-08-06 19:30:42,113 [INFO] Up Insertados 3 actores para película ID 180
+2025-08-06 19:30:42,117 [INFO] Up PostgreSQL: Raging Bull
+2025-08-06 19:30:42,117 [INFO] Great Procesado: Raging Bull
+2025-08-06 19:30:42,118 [INFO] Up PostgreSQL: Gran Torino
+2025-08-06 19:30:42,118 [INFO] Up PostgreSQL: Trainspotting
+2025-08-06 19:30:42,119 [INFO] Great Procesado: Gran Torino
+2025-08-06 19:30:42,120 [INFO] Great Procesado: Trainspotting
+2025-08-06 19:30:42,711 [INFO] Up PostgreSQL: Película insertada ID 181
+2025-08-06 19:30:42,714 [INFO] Up Insertados 3 actores para película ID 181
+2025-08-06 19:30:42,720 [INFO] Up PostgreSQL: Million Dollar Baby
+2025-08-06 19:30:42,720 [INFO] Great Procesado: Million Dollar Baby
+2025-08-06 19:30:43,356 [INFO] Up PostgreSQL: Película insertada ID 182
+2025-08-06 19:30:43,359 [INFO] Up Insertados 3 actores para película ID 182
+2025-08-06 19:30:43,361 [INFO] Up PostgreSQL: Ben-Hur
+2025-08-06 19:30:43,361 [INFO] Great Procesado: Ben-Hur
+2025-08-06 19:30:43,939 [INFO] Up PostgreSQL: Película insertada ID 183
+2025-08-06 19:30:43,941 [INFO] Up Insertados 3 actores para película ID 183
+2025-08-06 19:30:43,948 [INFO] Up PostgreSQL: My Neighbor Totoro
+2025-08-06 19:30:43,948 [INFO] Great Procesado: My Neighbor Totoro
+2025-08-06 19:30:44,469 [INFO] Up PostgreSQL: Película insertada ID 184
+2025-08-06 19:30:44,473 [INFO] Up Insertados 3 actores para película ID 184
+2025-08-06 19:30:44,480 [INFO] Up PostgreSQL: Barry Lyndon
+2025-08-06 19:30:44,481 [INFO] Great Procesado: Barry Lyndon
+2025-08-06 19:30:44,665 [INFO] Up PostgreSQL: Película insertada ID 185
+2025-08-06 19:30:44,671 [INFO] Up Insertados 3 actores para película ID 185
+2025-08-06 19:30:44,673 [INFO] Up PostgreSQL: Children of Heaven
+2025-08-06 19:30:44,673 [INFO] Great Procesado: Children of Heaven
+2025-08-06 19:30:45,572 [INFO] Up PostgreSQL: Película insertada ID 186
+2025-08-06 19:30:45,593 [INFO] Up PostgreSQL: Película insertada ID 187
+2025-08-06 19:30:45,634 [INFO] Up Insertados 3 actores para película ID 186
+2025-08-06 19:30:45,696 [INFO] Up Insertados 3 actores para película ID 187
+2025-08-06 19:30:45,734 [INFO] Up PostgreSQL: The Grand Budapest Hotel
+2025-08-06 19:30:45,734 [INFO] Great Procesado: The Grand Budapest Hotel
+2025-08-06 19:30:45,735 [INFO] Up PostgreSQL: Mad Max: Fury Road
+2025-08-06 19:30:45,736 [INFO] Great Procesado: Mad Max: Fury Road
+2025-08-06 19:30:45,968 [INFO] Up PostgreSQL: Película insertada ID 188
+2025-08-06 19:30:45,978 [INFO] Up Insertados 3 actores para película ID 188
+2025-08-06 19:30:45,981 [INFO] Up PostgreSQL: 12 Years a Slave
+2025-08-06 19:30:45,981 [INFO] Great Procesado: 12 Years a Slave
+2025-08-06 19:30:45,989 [INFO] Up PostgreSQL: Película insertada ID 189
+2025-08-06 19:30:45,993 [INFO] Up Insertados 3 actores para película ID 189
+2025-08-06 19:30:46,026 [INFO] Up PostgreSQL: Dead Poets Society
+2025-08-06 19:30:46,052 [INFO] Great Procesado: Dead Poets Society
+2025-08-06 19:30:46,730 [INFO] Up PostgreSQL: Película insertada ID 190
+2025-08-06 19:30:46,733 [INFO] Up Insertados 3 actores para película ID 190
+2025-08-06 19:30:46,742 [INFO] Up PostgreSQL: Hacksaw Ridge
+2025-08-06 19:30:46,743 [INFO] Great Procesado: Hacksaw Ridge
+2025-08-06 19:30:46,803 [INFO] Up PostgreSQL: Película insertada ID 191
+2025-08-06 19:30:46,807 [INFO] Up Insertados 3 actores para película ID 191
+2025-08-06 19:30:46,813 [INFO] Up PostgreSQL: Before Sunrise
+2025-08-06 19:30:46,814 [INFO] Great Procesado: Before Sunrise
+2025-08-06 19:30:47,267 [INFO] Up PostgreSQL: Película insertada ID 192
+2025-08-06 19:30:47,270 [INFO] Up Insertados 3 actores para película ID 192
+2025-08-06 19:30:47,275 [INFO] Up PostgreSQL: Spider-Man: No Way Home
+2025-08-06 19:30:47,277 [INFO] Great Procesado: Spider-Man: No Way Home
+2025-08-06 19:30:47,676 [INFO] Up PostgreSQL: Película insertada ID 193
+2025-08-06 19:30:47,679 [INFO] Up Insertados 3 actores para película ID 193
+2025-08-06 19:30:47,685 [INFO] Up PostgreSQL: Memories of Murder
+2025-08-06 19:30:47,686 [INFO] Great Procesado: Memories of Murder
+2025-08-06 19:30:47,726 [INFO] Up PostgreSQL: Película insertada ID 194
+2025-08-06 19:30:47,729 [INFO] Up Insertados 3 actores para película ID 194
+2025-08-06 19:30:47,731 [INFO] Up PostgreSQL: Blade Runner
+2025-08-06 19:30:47,731 [INFO] Great Procesado: Blade Runner
+2025-08-06 19:30:48,432 [INFO] Up PostgreSQL: Película insertada ID 195
+2025-08-06 19:30:48,435 [INFO] Up Insertados 3 actores para película ID 195
+2025-08-06 19:30:48,438 [INFO] Up PostgreSQL: Gone Girl
+2025-08-06 19:30:48,438 [INFO] Great Procesado: Gone Girl
+2025-08-06 19:30:49,156 [INFO] Up PostgreSQL: Película insertada ID 196
+2025-08-06 19:30:49,160 [INFO] Up Insertados 3 actores para película ID 196
+2025-08-06 19:30:49,168 [INFO] Up PostgreSQL: How to Train Your Dragon
+2025-08-06 19:30:49,168 [INFO] Great Procesado: How to Train Your Dragon
+2025-08-06 19:30:49,391 [INFO] Up PostgreSQL: Película insertada ID 197
+2025-08-06 19:30:49,469 [INFO] Up Insertados 3 actores para película ID 197
+2025-08-06 19:30:49,478 [INFO] Up PostgreSQL: Monsters, Inc.
+2025-08-06 19:30:49,478 [INFO] Great Procesado: Monsters, Inc.
+2025-08-06 19:30:49,983 [INFO] Up PostgreSQL: Película insertada ID 198
+2025-08-06 19:30:49,986 [INFO] Up Insertados 3 actores para película ID 198
+2025-08-06 19:30:49,993 [INFO] Up PostgreSQL: Jaws
+2025-08-06 19:30:49,994 [INFO] Great Procesado: Jaws
+2025-08-06 19:30:50,759 [INFO] Up PostgreSQL: Película insertada ID 199
+2025-08-06 19:30:50,779 [INFO] Up PostgreSQL: Película insertada ID 200
+2025-08-06 19:30:50,780 [INFO] Up Insertados 3 actores para película ID 199
+2025-08-06 19:30:50,782 [INFO] Up Insertados 3 actores para película ID 200
+2025-08-06 19:30:50,787 [INFO] Up PostgreSQL: In the Name of the Father
+2025-08-06 19:30:50,787 [INFO] Great Procesado: In the Name of the Father
+2025-08-06 19:30:50,788 [INFO] Up PostgreSQL: Ratatouille
+2025-08-06 19:30:50,788 [INFO] Great Procesado: Ratatouille
+2025-08-06 19:30:51,592 [INFO] Up PostgreSQL: Película insertada ID 201
+2025-08-06 19:30:51,595 [INFO] Up Insertados 3 actores para película ID 201
+2025-08-06 19:30:51,603 [INFO] Up PostgreSQL: Ford v Ferrari
+2025-08-06 19:30:51,603 [INFO] Great Procesado: Ford v Ferrari
+2025-08-06 19:30:51,981 [INFO] Up PostgreSQL: Película insertada ID 203
+2025-08-06 19:30:51,981 [INFO] Up PostgreSQL: Película insertada ID 202
+2025-08-06 19:30:51,987 [INFO] Up Insertados 3 actores para película ID 203
+2025-08-06 19:30:51,987 [INFO] Up Insertados 3 actores para película ID 202
+2025-08-06 19:30:51,994 [INFO] Up PostgreSQL: Sherlock Jr.
+2025-08-06 19:30:51,995 [INFO] Great Procesado: Sherlock Jr.
+2025-08-06 19:30:51,995 [INFO] Up PostgreSQL: The Wages of Fear
+2025-08-06 19:30:51,996 [INFO] Great Procesado: The Wages of Fear
+2025-08-06 19:30:52,208 [INFO] Up PostgreSQL: Película insertada ID 204
+2025-08-06 19:30:52,212 [INFO] Up Insertados 3 actores para película ID 204
+2025-08-06 19:30:52,219 [INFO] Up PostgreSQL: Mary and Max
+2025-08-06 19:30:52,219 [INFO] Great Procesado: Mary and Max
+2025-08-06 19:30:53,232 [INFO] Up PostgreSQL: Película insertada ID 205
+2025-08-06 19:30:53,235 [INFO] Up Insertados 3 actores para película ID 205
+2025-08-06 19:30:53,241 [INFO] Up PostgreSQL: The General
+2025-08-06 19:30:53,242 [INFO] Great Procesado: The General
+2025-08-06 19:30:53,658 [INFO] Up PostgreSQL: Película insertada ID 206
+2025-08-06 19:30:53,660 [INFO] Up Insertados 3 actores para película ID 206
+2025-08-06 19:30:53,666 [INFO] Up PostgreSQL: The Gold Rush
+2025-08-06 19:30:53,666 [INFO] Great Procesado: The Gold Rush
+2025-08-06 19:30:53,777 [INFO] Up PostgreSQL: Película insertada ID 207
+2025-08-06 19:30:53,781 [INFO] Up Insertados 3 actores para película ID 207
+2025-08-06 19:30:53,787 [INFO] Up PostgreSQL: The Deer Hunter
+2025-08-06 19:30:53,787 [INFO] Great Procesado: The Deer Hunter
+2025-08-06 19:30:54,111 [INFO] Up PostgreSQL: Película insertada ID 208
+2025-08-06 19:30:54,126 [INFO] Up PostgreSQL: Película insertada ID 209
+2025-08-06 19:30:54,151 [INFO] Up Insertados 3 actores para película ID 208
+2025-08-06 19:30:54,153 [INFO] Up Insertados 3 actores para película ID 209
+2025-08-06 19:30:54,158 [INFO] Up PostgreSQL: Wild Tales
+2025-08-06 19:30:54,158 [INFO] Great Procesado: Wild Tales
+2025-08-06 19:30:54,158 [INFO] Up PostgreSQL: On the Waterfront
+2025-08-06 19:30:54,159 [INFO] Great Procesado: On the Waterfront
+2025-08-06 19:30:54,500 [INFO] Up PostgreSQL: Película insertada ID 210
+2025-08-06 19:30:54,503 [INFO] Up Insertados 3 actores para película ID 210
+2025-08-06 19:30:54,510 [INFO] Up PostgreSQL: Mr. Smith Goes to Washington
+2025-08-06 19:30:54,510 [INFO] Great Procesado: Mr. Smith Goes to Washington
+2025-08-06 19:30:55,400 [INFO] Up PostgreSQL: Película insertada ID 211
+2025-08-06 19:30:55,403 [INFO] Up Insertados 3 actores para película ID 211
+2025-08-06 19:30:55,410 [INFO] Up PostgreSQL: Logan
+2025-08-06 19:30:55,410 [INFO] Great Procesado: Logan
+2025-08-06 19:30:55,419 [INFO] Up PostgreSQL: Película insertada ID 212
+2025-08-06 19:30:55,422 [INFO] Up Insertados 3 actores para película ID 212
+2025-08-06 19:30:55,423 [INFO] Up PostgreSQL: Wild Strawberries
+2025-08-06 19:30:55,424 [INFO] Great Procesado: Wild Strawberries
+2025-08-06 19:30:56,394 [INFO] Up PostgreSQL: Película insertada ID 213
+2025-08-06 19:30:56,399 [INFO] Up Insertados 3 actores para película ID 213
+2025-08-06 19:30:56,406 [INFO] Up PostgreSQL: Tokyo Story
+2025-08-06 19:30:56,406 [INFO] Great Procesado: Tokyo Story
+2025-08-06 19:30:56,855 [INFO] Up PostgreSQL: Película insertada ID 214
+2025-08-06 19:30:56,858 [INFO] Up Insertados 3 actores para película ID 214
+2025-08-06 19:30:56,860 [INFO] Up PostgreSQL: Spotlight
+2025-08-06 19:30:56,861 [INFO] Great Procesado: Spotlight
+2025-08-06 19:30:56,934 [INFO] Up PostgreSQL: Película insertada ID 215
+2025-08-06 19:30:56,981 [INFO] Up Insertados 3 actores para película ID 215
+2025-08-06 19:30:56,988 [INFO] Up PostgreSQL: Rocky
+2025-08-06 19:30:56,989 [INFO] Great Procesado: Rocky
+2025-08-06 19:30:57,035 [INFO] Up PostgreSQL: Película insertada ID 216
+2025-08-06 19:30:57,042 [INFO] Up Insertados 3 actores para película ID 216
+2025-08-06 19:30:57,047 [INFO] Up PostgreSQL: The Third Man
+2025-08-06 19:30:57,047 [INFO] Great Procesado: The Third Man
+2025-08-06 19:30:57,907 [INFO] Up PostgreSQL: Película insertada ID 217
+2025-08-06 19:30:57,911 [INFO] Up Insertados 3 actores para película ID 217
+2025-08-06 19:30:57,917 [INFO] Up PostgreSQL: The Big Lebowski
+2025-08-06 19:30:57,917 [INFO] Great Procesado: The Big Lebowski
+2025-08-06 19:30:58,615 [INFO] Up PostgreSQL: Película insertada ID 218
+2025-08-06 19:30:58,709 [INFO] Up Insertados 3 actores para película ID 218
+2025-08-06 19:30:58,711 [INFO] Up PostgreSQL: Maharaja
+2025-08-06 19:30:58,712 [INFO] Great Procesado: Maharaja
+2025-08-06 19:30:58,758 [INFO] Up PostgreSQL: Película insertada ID 219
+2025-08-06 19:30:58,761 [INFO] Up Insertados 3 actores para película ID 219
+2025-08-06 19:30:58,764 [INFO] Up PostgreSQL: Pirates of the Caribbean: The Curse of the Black Pearl
+2025-08-06 19:30:58,764 [INFO] Great Procesado: Pirates of the Caribbean: The Curse of the Black Pearl
+2025-08-06 19:30:58,829 [INFO] Up PostgreSQL: Película insertada ID 220
+2025-08-06 19:30:58,832 [INFO] Up PostgreSQL: Película insertada ID 221
+2025-08-06 19:30:58,833 [INFO] Up Insertados 3 actores para película ID 220
+2025-08-06 19:30:58,835 [INFO] Up Insertados 3 actores para película ID 221
+2025-08-06 19:30:58,840 [INFO] Up PostgreSQL: The Terminator
+2025-08-06 19:30:58,840 [INFO] Great Procesado: The Terminator
+2025-08-06 19:30:58,841 [INFO] Up PostgreSQL: The Seventh Seal
+2025-08-06 19:30:58,842 [INFO] Great Procesado: The Seventh Seal
+2025-08-06 19:30:59,420 [INFO] Up PostgreSQL: Película insertada ID 222
+2025-08-06 19:30:59,424 [INFO] Up Insertados 3 actores para película ID 222
+2025-08-06 19:30:59,426 [INFO] Up PostgreSQL: La haine
+2025-08-06 19:30:59,426 [INFO] Great Procesado: La haine
+2025-08-06 19:31:00,328 [INFO] Up PostgreSQL: Película insertada ID 223
+2025-08-06 19:31:00,331 [INFO] Up Insertados 3 actores para película ID 223
+2025-08-06 19:31:00,338 [INFO] Up PostgreSQL: Room
+2025-08-06 19:31:00,338 [INFO] Great Procesado: Room
+2025-08-06 19:31:00,346 [INFO] Up PostgreSQL: Película insertada ID 224
+2025-08-06 19:31:00,350 [INFO] Up Insertados 3 actores para película ID 224
+2025-08-06 19:31:00,352 [INFO] Up PostgreSQL: Platoon
+2025-08-06 19:31:00,352 [INFO] Great Procesado: Platoon
+2025-08-06 19:31:00,421 [INFO] Up PostgreSQL: Película insertada ID 225
+2025-08-06 19:31:00,426 [INFO] Up Insertados 3 actores para película ID 225
+2025-08-06 19:31:00,433 [INFO] Up PostgreSQL: Jai Bhim
+2025-08-06 19:31:00,433 [INFO] Great Procesado: Jai Bhim
+2025-08-06 19:31:00,742 [INFO] Up PostgreSQL: Película insertada ID 226
+2025-08-06 19:31:00,805 [INFO] Up Insertados 3 actores para película ID 226
+2025-08-06 19:31:00,875 [INFO] Up PostgreSQL: Hotel Rwanda
+2025-08-06 19:31:00,877 [INFO] Great Procesado: Hotel Rwanda
+2025-08-06 19:31:01,648 [INFO] Up PostgreSQL: Película insertada ID 227
+2025-08-06 19:31:01,651 [INFO] Up Insertados 3 actores para película ID 227
+2025-08-06 19:31:01,658 [INFO] Up PostgreSQL: The Best Years of Our Lives
+2025-08-06 19:31:01,658 [INFO] Great Procesado: The Best Years of Our Lives
+2025-08-06 19:31:02,152 [INFO] Up PostgreSQL: Película insertada ID 228
+2025-08-06 19:31:02,156 [INFO] Up Insertados 3 actores para película ID 228
+2025-08-06 19:31:02,162 [INFO] Up PostgreSQL: Before Sunset
+2025-08-06 19:31:02,162 [INFO] Great Procesado: Before Sunset
+2025-08-06 19:31:02,301 [INFO] Up PostgreSQL: Película insertada ID 229
+2025-08-06 19:31:02,305 [INFO] Up Insertados 3 actores para película ID 229
+2025-08-06 19:31:02,312 [INFO] Up PostgreSQL: The Exorcist
+2025-08-06 19:31:02,312 [INFO] Great Procesado: The Exorcist
+2025-08-06 19:31:02,315 [INFO] Up PostgreSQL: Película insertada ID 230
+2025-08-06 19:31:02,319 [INFO] Up Insertados 3 actores para película ID 230
+2025-08-06 19:31:02,322 [INFO] Up PostgreSQL: The Sound of Music
+2025-08-06 19:31:02,324 [INFO] Great Procesado: The Sound of Music
+2025-08-06 19:31:04,238 [INFO] Up PostgreSQL: Película insertada ID 231
+2025-08-06 19:31:04,242 [INFO] Up Insertados 3 actores para película ID 231
+2025-08-06 19:31:04,248 [INFO] Up PostgreSQL: Hachi: A Dog's Tale
+2025-08-06 19:31:04,250 [INFO] Great Procesado: Hachi: A Dog's Tale
+2025-08-06 19:31:04,286 [INFO] Up PostgreSQL: Película insertada ID 232
+2025-08-06 19:31:04,294 [INFO] Up Insertados 3 actores para película ID 232
+2025-08-06 19:31:04,296 [INFO] Up PostgreSQL: The Passion of Joan of Arc
+2025-08-06 19:31:04,296 [INFO] Great Procesado: The Passion of Joan of Arc
+2025-08-06 19:31:04,334 [INFO] Up PostgreSQL: Película insertada ID 233
+2025-08-06 19:31:04,337 [INFO] Up Insertados 3 actores para película ID 233
+2025-08-06 19:31:04,339 [INFO] Up PostgreSQL: The Incredibles
+2025-08-06 19:31:04,339 [INFO] Great Procesado: The Incredibles
+2025-08-06 19:31:04,426 [INFO] Up PostgreSQL: Película insertada ID 234
+2025-08-06 19:31:04,429 [INFO] Up Insertados 3 actores para película ID 234
+2025-08-06 19:31:04,436 [INFO] Up PostgreSQL: Rush
+2025-08-06 19:31:04,436 [INFO] Great Procesado: Rush
+2025-08-06 19:31:05,171 [INFO] Up PostgreSQL: Película insertada ID 235
+2025-08-06 19:31:05,185 [INFO] Up Insertados 3 actores para película ID 235
+2025-08-06 19:31:05,186 [INFO] Up PostgreSQL: Película insertada ID 236
+2025-08-06 19:31:05,189 [INFO] Up Insertados 3 actores para película ID 236
+2025-08-06 19:31:05,193 [INFO] Up PostgreSQL: The Wizard of Oz
+2025-08-06 19:31:05,193 [INFO] Great Procesado: The Wizard of Oz
+2025-08-06 19:31:05,194 [INFO] Up PostgreSQL: A Silent Voice: The Movie
+2025-08-06 19:31:05,194 [INFO] Great Procesado: A Silent Voice: The Movie
+2025-08-06 19:31:05,642 [INFO] Up PostgreSQL: Película insertada ID 237
+2025-08-06 19:31:05,646 [INFO] Up Insertados 3 actores para película ID 237
+2025-08-06 19:31:05,652 [INFO] Up PostgreSQL: The Iron Giant
+2025-08-06 19:31:05,652 [INFO] Great Procesado: The Iron Giant
+2025-08-06 19:31:06,316 [INFO] Up PostgreSQL: Película insertada ID 238
+2025-08-06 19:31:06,320 [INFO] Up Insertados 3 actores para película ID 238
+2025-08-06 19:31:06,326 [INFO] Up PostgreSQL: Network
+2025-08-06 19:31:06,327 [INFO] Great Procesado: Network
+2025-08-06 19:31:06,613 [INFO] Up PostgreSQL: Película insertada ID 239
+2025-08-06 19:31:06,642 [INFO] Up Insertados 3 actores para película ID 239
+2025-08-06 19:31:06,649 [INFO] Up PostgreSQL: Stand by Me
+2025-08-06 19:31:06,650 [INFO] Great Procesado: Stand by Me
+2025-08-06 19:31:06,819 [INFO] Up PostgreSQL: Película insertada ID 240
+2025-08-06 19:31:06,822 [INFO] Up Insertados 3 actores para película ID 240
+2025-08-06 19:31:06,829 [INFO] Up PostgreSQL: My Father and My Son
+2025-08-06 19:31:06,830 [INFO] Great Procesado: My Father and My Son
+2025-08-06 19:31:07,961 [INFO] Up PostgreSQL: Película insertada ID 241
+2025-08-06 19:31:07,964 [INFO] Up Insertados 3 actores para película ID 241
+2025-08-06 19:31:07,971 [INFO] Up PostgreSQL: The Handmaiden
+2025-08-06 19:31:07,971 [INFO] Great Procesado: The Handmaiden
+2025-08-06 19:31:08,160 [INFO] Up PostgreSQL: Película insertada ID 242
+2025-08-06 19:31:08,170 [INFO] Up Insertados 3 actores para película ID 242
+2025-08-06 19:31:08,177 [INFO] Up PostgreSQL: To Be or Not to Be
+2025-08-06 19:31:08,177 [INFO] Great Procesado: To Be or Not to Be
+2025-08-06 19:31:08,198 [INFO] Up PostgreSQL: Película insertada ID 243
+2025-08-06 19:31:08,201 [INFO] Up Insertados 3 actores para película ID 243
+2025-08-06 19:31:08,203 [INFO] Up PostgreSQL: The Battle of Algiers
+2025-08-06 19:31:08,204 [INFO] Great Procesado: The Battle of Algiers
+2025-08-06 19:31:08,780 [INFO] Up PostgreSQL: Película insertada ID 244
+2025-08-06 19:31:08,783 [INFO] Up Insertados 3 actores para película ID 244
+2025-08-06 19:31:08,789 [INFO] Up PostgreSQL: Groundhog Day
+2025-08-06 19:31:08,789 [INFO] Great Procesado: Groundhog Day
+2025-08-06 19:31:08,849 [INFO] Up PostgreSQL: Película insertada ID 245
+2025-08-06 19:31:08,852 [INFO] Up Insertados 3 actores para película ID 245
+2025-08-06 19:31:08,876 [INFO] Up PostgreSQL: The Grapes of Wrath
+2025-08-06 19:31:08,924 [INFO] Great Procesado: The Grapes of Wrath
+2025-08-06 19:31:09,287 [INFO] Up PostgreSQL: Película insertada ID 246
+2025-08-06 19:31:09,290 [INFO] Up Insertados 3 actores para película ID 246
+2025-08-06 19:31:09,292 [INFO] Up PostgreSQL: Drishyam
+2025-08-06 19:31:09,293 [INFO] Great Procesado: Drishyam
+2025-08-06 19:31:09,755 [INFO] Up PostgreSQL: Película insertada ID 247
+2025-08-06 19:31:09,759 [INFO] Up Insertados 3 actores para película ID 247
+2025-08-06 19:31:09,766 [INFO] Up PostgreSQL: Into the Wild
+2025-08-06 19:31:09,766 [INFO] Great Procesado: Into the Wild
+2025-08-06 19:31:09,802 [INFO] Up PostgreSQL: Película insertada ID 248
+2025-08-06 19:31:09,806 [INFO] Up Insertados 3 actores para película ID 248
+2025-08-06 19:31:09,808 [INFO] Up PostgreSQL: Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train
+2025-08-06 19:31:09,808 [INFO] Great Procesado: Demon Slayer: Kimetsu no Yaiba - The Movie: Mugen Train
+2025-08-06 19:31:10,179 [INFO] Up PostgreSQL: Película insertada ID 249
+2025-08-06 19:31:10,182 [INFO] Up Insertados 3 actores para película ID 249
+2025-08-06 19:31:10,188 [INFO] Up PostgreSQL: Gangs of Wasseypur
+2025-08-06 19:31:10,188 [INFO] Great Procesado: Gangs of Wasseypur
+2025-08-06 19:31:10,195 [INFO] Up PostgreSQL: Película insertada ID 250
+2025-08-06 19:31:10,197 [INFO] Up Insertados 3 actores para película ID 250
+2025-08-06 19:31:10,199 [INFO] Up PostgreSQL: The Help
+2025-08-06 19:31:10,199 [INFO] Great Procesado: The Help
+2025-08-06 19:31:10,210 [INFO] Great Archivo generado: data/detalle_peliculas.csv
+2025-08-06 19:31:10,210 [INFO] Done Total de películas procesadas: 250

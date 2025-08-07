@@ -24,6 +24,16 @@ TOP_URL = "https://www.imdb.com/chart/top/"
 os.makedirs('data', exist_ok=True)
 
 
+def obtener_ip_publica():
+    try:
+        response = requests.get("https://ifconfig.me", timeout=5)
+        if response.status_code == 200:
+            return response.text.strip()
+    except requests.RequestException:
+        pass
+    return "IP desconocida"
+
+
 def get_headers():
     return {
         'User-Agent': random.choice(USER_AGENTS),

@@ -1,16 +1,40 @@
 import csv
 import os
+import random
+import threading
 from functools import wraps
+from queue import Queue
+
 from lxml import html
+from lxml.html import fromstring
 import requests
 from bs4 import BeautifulSoup
 import re
-from scraper import get_headers
+from scraper import get_headers, obtener_ip_publica, get_page, extraer_enlaces_imdb
 import psycopg2
 from psycopg2 import sql
 from dotenv import load_dotenv
-
+import logging
+from config import use_proxies
 load_dotenv()
+
+TOP_URL = "https://www.imdb.com/chart/top/"
+# Asegura que la carpeta de logs exista
+os.makedirs("data", exist_ok=True)
+
+# Configura el logging para consola + archivo
+logging.basicConfig(
+    level=logging.INFO,
+    format="%(asctime)s [%(levelname)s] %(message)s",
+    handlers=[
+        logging.StreamHandler(),  # consola
+        logging.FileHandler("data/scraper.log", mode='w', encoding='utf-8')  # archivo
+    ]
+)
+
+with open("data/proxies/valid_proxies.txt", "r") as f:
+    proxies = f.read().split('\n')
+
 
 def extraer_metascore_flexible(soup):
     """
@@ -30,6 +54,7 @@ def extraer_metascore_flexible(soup):
 
 
 def probar_conexion():
+    ip = obtener_ip_publica()
     try:
         conn = psycopg2.connect(
             host=os.environ.get("DB_HOST"),
@@ -38,11 +63,11 @@ def probar_conexion():
             user=os.environ.get("POSTGRES_USER"),
             password=os.environ.get("POSTGRES_PASSWORD")
         )
-        print("✅ Conexión exitosa a PostgreSQL")
+        logging.info(f"Great Conexión exitosa a PostgreSQL")
         conn.close()
         return True
     except Exception as e:
-        print(f"❌ Error al conectar: {e}")
+        logging.error(f"Fail Error al conectar: {e}")
         return False
 
 
@@ -54,10 +79,9 @@ def insertar_en_bd(func):
 
         # Añadir URL a los datos para la inserción
         data['url'] = url
-
+        ip = obtener_ip_publica()
         try:
-            print(
-                f'{os.environ.get("DB_HOST")}, {os.environ.get("DB_PORT")}, {os.environ.get("POSTGRES_DB")}, {os.environ.get("POSTGRES_USER")}, {os.environ.get("POSTGRES_PASSWORD")}')
+            logging.debug(f'{os.environ.get("DB_HOST")}, {os.environ.get("DB_PORT")}, {os.environ.get("POSTGRES_DB")}, {os.environ.get("POSTGRES_USER")}, {os.environ.get("POSTGRES_PASSWORD")}')
 
             conn = psycopg2.connect(
                 host=os.environ.get("DB_HOST"),
@@ -86,9 +110,10 @@ def insertar_en_bd(func):
 
             # Obtener ID de la película insertada
             result = cur.fetchone()
+
             if result:
                 pelicula_id = result[0]
-                print(f"↑ PostgreSQL: Película insertada ID {pelicula_id}")
+                logging.info(f"Up PostgreSQL: Película insertada ID {pelicula_id}")
 
                 # 2. Insertar actores relacionados
                 actores = data.get('actores', [])
@@ -100,13 +125,13 @@ def insertar_en_bd(func):
                                     """),
                         (pelicula_id, actor)
                     )
-                print(f"↑ Insertados {len(actores)} actores para película ID {pelicula_id}")
+                logging.info(f"Up Insertados {len(actores)} actores para película ID {pelicula_id}")
 
             conn.commit()
-            print(f"↑ PostgreSQL: {data.get('titulo', 'N/A')}")
+            logging.info(f"Up PostgreSQL: {data.get('titulo', 'N/A')}")
             conn.close()
         except psycopg2.Error as e:
-            print(f"❌ Error PostgreSQL: {e}")
+            logging.error(f"Fail Error PostgreSQL: {e}")
 
         return data
 
@@ -152,77 +177,107 @@ def crear_tabla_si_no_existe():
 @insertar_en_bd
 def extraer_info_pelicula(url):
     headers = get_headers()
-    response = requests.get(url, headers=headers)
-    soup = BeautifulSoup(response.text, 'html.parser')
-    tree = html.fromstring(str(soup))
-    data = {}
-
-    # Título
-    title_tag = soup.find('h1')
-    if title_tag:
-        data['titulo'] = title_tag.get_text(strip=True)
-
-    # año
-    try:
-        # El XPath que proporcionaste
-        año_element = tree.xpath(
-            '//*[@id="__next"]/main/div/section[1]/section/div[3]/section/section/div[2]/div[1]/ul/li[1]/a')
-
-        if año_element:
-            año_text = año_element[0].text.strip()
-            año_match = re.search(r'\d{4}', año_text)
-            if año_match:
-                data['año'] = int(año_match.group())
-    except Exception as e:
-        print(f"Error extrayendo año con XPath: {e}")
-    # Calificación IMDb
-    rating_tag = soup.select_one('[data-testid="hero-rating-bar__aggregate-rating__score"] span')
-    if rating_tag:
+    intentos_max = 5
+    intento = 0
+    while intento < intentos_max:
+        proxy_idx = random.randint(0, len(proxies) - 1)
+        proxy_actual = proxies[proxy_idx]
         try:
-            data['calificacion'] = float(rating_tag.text.strip())
-        except ValueError:
-            pass
+            if use_proxies:
+                response = requests.get(
+                    url,
+                    headers=headers,
+                    proxies={"http": proxy_actual,
+                             "https": proxy_actual},
+                    timeout=10
+                )
+            else:
+                response = requests.get(
+                    url,
+                    headers=headers
+                )
 
-    # Duración
-    duracion_tag = soup.select_one('li[data-testid="title-techspec_runtime"]')
-    if duracion_tag:
-        duracion_text = duracion_tag.get_text(strip=True)
-        horas = re.search(r'(\d+)h', duracion_text)
-        minutos = re.search(r'(\d+)m', duracion_text)
-        total_min = 0
-        if horas:
-            total_min += int(horas.group(1)) * 60
-        if minutos:
-            total_min += int(minutos.group(1))
-        if total_min > 0:
-            data['duracion_min'] = total_min
+            if response.status_code != 200:
+                raise Exception(f"HTTP {response.status_code}")
 
-    # Metascore (nuevo selector)
-    metascore = extraer_metascore_flexible(soup)
-    if metascore:
-        try:
-            data['metascore'] = metascore
-        except ValueError:
-            pass
+            soup = BeautifulSoup(response.text, 'html.parser')
+            tree = fromstring(response.text)
+            data = {}
 
-    # Actores principales (nuevo selector, más confiable)
-    actores = []
-    credit_blocks = soup.select('li[data-testid="title-pc-principal-credit"]')
+            # Título
+            title_tag = soup.find('h1')
+            if title_tag:
+                data['titulo'] = title_tag.get_text(strip=True)
+            ip = obtener_ip_publica()
+            # año
+            try:
+                # El XPath que proporcionaste
+                año_element = tree.xpath(
+                    '//*[@id="__next"]/main/div/section[1]/section/div[3]/section/section/div[2]/div[1]/ul/li[1]/a')
 
-    for block in credit_blocks:
-        if 'Stars' in block.text:
-            a_tags = block.select('a[href^="/name/"]')
-            for tag in a_tags:
-                nombre = tag.text.strip()
-                if nombre and nombre.lower() != "see more":
-                    actores.append(nombre)
-                if len(actores) == 3:
+                if año_element:
+                    año_text = año_element[0].text.strip()
+                    año_match = re.search(r'\d{4}', año_text)
+                    if año_match:
+                        data['año'] = int(año_match.group())
+            except Exception as e:
+                logging.warning(f"Error extrayendo año con XPath: {e}")
+            # Calificación IMDb
+            rating_tag = soup.select_one('[data-testid="hero-rating-bar__aggregate-rating__score"] span')
+            if rating_tag:
+                try:
+                    data['calificacion'] = float(rating_tag.text.strip())
+                except ValueError:
+                    pass
+
+            # Duración
+            duracion_tag = soup.select_one('li[data-testid="title-techspec_runtime"]')
+            if duracion_tag:
+                duracion_text = duracion_tag.get_text(strip=True)
+                horas = re.search(r'(\d+)h', duracion_text)
+                minutos = re.search(r'(\d+)m', duracion_text)
+                total_min = 0
+                if horas:
+                    total_min += int(horas.group(1)) * 60
+                if minutos:
+                    total_min += int(minutos.group(1))
+                if total_min > 0:
+                    data['duracion_min'] = total_min
+
+            # Metascore (nuevo selector)
+            metascore = extraer_metascore_flexible(soup)
+            if metascore:
+                try:
+                    data['metascore'] = metascore
+                except ValueError:
+                    pass
+
+            # Actores principales (nuevo selector, más confiable)
+            actores = []
+            credit_blocks = soup.select('li[data-testid="title-pc-principal-credit"]')
+
+            for block in credit_blocks:
+                if 'Stars' in block.text:
+                    a_tags = block.select('a[href^="/name/"]')
+                    for tag in a_tags:
+                        nombre = tag.text.strip()
+                        if nombre and nombre.lower() != "see more":
+                            actores.append(nombre)
+                        if len(actores) == 3:
+                            break
                     break
-            break
 
-    data['actores'] = actores
-    print(data)
-    return data
+            data['actores'] = actores
+            data['url'] = url
+
+            return data
+        except Exception as e:
+            logging.warning(f"Error en la solicitud: {e}")
+            intento += 1
+
+    logging.error(f"Fail Fallaron los {intentos_max} intentos para {url}")
+    return None
+
 
 def procesar_peliculas_csv(input_csv='data/enlaces_peliculas.csv',
                             output_csv='data/detalle_peliculas.csv',
@@ -235,23 +290,38 @@ def procesar_peliculas_csv(input_csv='data/enlaces_peliculas.csv',
     crear_tabla_si_no_existe()
 
     resultados = []
+    resultados_lock = threading.Lock()
+    tareas = Queue()
 
     with open(input_csv, 'r', encoding='utf-8') as f:
         reader = csv.DictReader(f)
-        n = 0
+        for i, fila in enumerate(reader):
+            if i >= 250:
+                break
+            tareas.put(fila['Enlace'])
 
-        for fila in reader:
-            while n < 250:
-                url = fila['Enlace']
-                try:
-                    info = extraer_info_pelicula(url)
-                    info['url'] = url
+    def trabajador():
+        while not tareas.empty():
+            url = tareas.get()
+            try:
+                info = extraer_info_pelicula(url)
+                info['url'] = url
+                with resultados_lock:
                     resultados.append(info)
-                    n += 1
-                    print(f"✅ {n} Procesado: {info.get('titulo', 'N/A')}")
-                except Exception as e:
-                    print(f"❌ Error al procesar {url}: {e}")
-                # time.sleep(delay)
+                logging.info(f"Great Procesado: {info.get('titulo', 'N/A')}")
+            except Exception as e:
+                logging.warning(f"Fail Error al procesar {url}: {e}")
+            tareas.task_done()
+
+    # Crear y lanzar 10 hilos
+    hilos = []
+    for _ in range(10):
+        t = threading.Thread(target=trabajador)
+        t.start()
+        hilos.append(t)
+
+    for t in hilos:
+        t.join()
 
     # Guardar resultados
     os.makedirs(os.path.dirname(output_csv), exist_ok=True)
@@ -264,8 +334,13 @@ def procesar_peliculas_csv(input_csv='data/enlaces_peliculas.csv',
             fila['actores'] = ', '.join(fila.get('actores', []))
             writer.writerow(fila)
 
-    print(f"\n📄 Archivo generado: {output_csv}")
-    print(f"🎬 Total de películas procesadas: {len(resultados)}")
+    logging.info(f"Great Archivo generado: {output_csv}")
+    logging.info(f"Done Total de películas procesadas: {len(resultados)}")
 
 
+html = get_page(TOP_URL)
+debug_path = os.path.join('data', 'imdb_debug.html')
+with open(debug_path, 'w', encoding='utf-8') as f:
+    f.write(html)
+extraer_enlaces_imdb(debug_path)
 procesar_peliculas_csv()
