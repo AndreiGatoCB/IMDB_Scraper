@@ -84,7 +84,7 @@ CREATE INDEX idx_peliculas_anio ON peliculas(anio);
 SELECT * FROM peliculas
 WHERE anio BETWEEN 1990 AND 1999;
 
-CREATE INDEX idx_peliculas_anio_calificacion ON peliculas(anio, calificacion);
+CREATE INDEX idx_peliculas_decada_calificacion ON peliculas(anio, calificacion);
 -- Películas de los 90 con calificación mayor a 8
 SELECT * FROM peliculas
 WHERE anio BETWEEN 1990 AND 1999
